@@ -14,7 +14,38 @@
         color: black;
     }
 
-    .head {}
+    .container {
+        max-width: 1280px;
+        margin: auto;
+    }
+
+    .top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+
+    }
+
+    .navbar {
+        display: flex;
+        gap: 40px;
+
+    }
+
+    .text {
+        font-family: "Oxygen", sans-serif;
+        font-size: 20px;
+        font-weight: 400;
+        display: flex;
+
+    }
+
+    .request {
+        border: 1px black solid;
+        border-radius: 8px;
+        padding: 20px 30px;
+    }
 
     h2,
     p {
@@ -25,14 +56,27 @@
 </style>
 
 <body>
-    <div class="head">
-        <div>
-            <h2> Navigating the digital landcape for success</h2>
-            <p>Our digital marketing agency helps businesses grow and succeed online throuhgh a range of service
-                including SEO,PPC social media marketing , and content creation.</p>
+    <div class="container">
+        <div class="top">
+            <div>
+                <img src="image/logo.png" alt="Positivus Logo" width="200px">
+            </div>
+            <div class="navbar">
+                <div class="text">
+                    <div>About US </div>
+                    <div>Services </div>
+                    <div>Use Cases </div>
+                    <div>Pricing </div>
+                    <div>Blog</div>
+                    <div class="request">
+                        <div>Request a quote </div>
+                    </div>
+                </div>
+            </div>
         </div>
+        <p>Our digital marketing agency helps businesses grow and succeed online throuhgh a range of service
+            including SEO,PPC social media marketing , and content creation.</p>
     </div>
-
 </body>
 
 </html>
