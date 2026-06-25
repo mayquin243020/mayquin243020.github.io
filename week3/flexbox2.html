@@ -9,11 +9,6 @@
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Space+Grotesk:wght@300..700&display=swap');
 
-    body {
-        background-color: white;
-        color: black;
-    }
-
     .container {
         max-width: 1280px;
         margin: auto;
@@ -23,28 +18,61 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-
-
     }
 
     .navbar {
         display: flex;
         gap: 40px;
-
+        align-items: center;
+        display: flex;
+        font-family: "Oxygen", sans-serif;
     }
 
-    .text {
-        font-family: "Oxygen", sans-serif;
-        font-size: 20px;
-        font-weight: 400;
-        display: flex;
-
+    .navbr a {
+        color: black;
+        text-decoration: none;
     }
 
     .request {
         border: 1px black solid;
+        font-family: "Oxygen", sans-serif;
         border-radius: 8px;
         padding: 20px 30px;
+    }
+
+    .mid {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        margin-right: 800px;
+        margin-left: 120px;
+        font-family: "Oxygen", sans-serif;
+    }
+
+    .mid a {
+        margin-top: 50px;
+        font-weight: 500;
+        font-style: medium;
+        font-size: 60px;
+        padding-right: 100px;
+    }
+
+    .mid p {
+        font-weight: 400;
+        font-size: 20px;
+        margin-top: 0px;
+        padding-right: 125px;
+    }
+
+    .mid button {
+        font-weight: 400;
+        font-size: 20px;
+        color: white;
+        background-color: black;
+        padding: 20px 35px;
+        border-radius: 14px;
+        margin-top: 20px;
     }
 
     h2,
@@ -62,21 +90,22 @@
                 <img src="image/logo.png" alt="Positivus Logo" width="200px">
             </div>
             <div class="navbar">
-                <div class="text">
-                    <div>About US </div>
-                    <div>Services </div>
-                    <div>Use Cases </div>
-                    <div>Pricing </div>
-                    <div>Blog</div>
-                    <div class="request">
-                        <div>Request a quote </div>
-                    </div>
+                <a>About US </a>
+                <a>Services </a>
+                <a>Use Cases </a>
+                <a>Pricing </a>
+                <a>Blog</a>
+                <div class="request">
+                    <div>Request a quote </div>
                 </div>
             </div>
         </div>
-        <p>Our digital marketing agency helps businesses grow and succeed online throuhgh a range of service
-            including SEO,PPC social media marketing , and content creation.</p>
     </div>
+    <div class="mid">
+        <a>Navigating the digital landscape for success</a>
+        <p>Our digital marketing agency helps businesses grow and succeed online through a range of service
+            including SEO,PPC social media marketing , and content creation.</p>
+        <button>Book a consultation</button>
 </body>
 
 </html>
