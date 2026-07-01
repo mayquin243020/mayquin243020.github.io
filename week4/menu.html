@@ -53,6 +53,37 @@
         .call {
             display: none;
         }
+
+        @media screen and (max-width: 1080px) {
+            .header {
+                align-items: center;
+                margin: 20px 10px;
+            }
+
+            .bar {
+                display: none;
+            }
+
+            .phone {
+                align-items: left;
+
+            }
+
+            .phone button {
+                display: none;
+            }
+
+            .call {
+                display: block;
+            }
+        }
+
+        @media screen and (max-width: 720px) {
+
+            .phone {
+                display: none;
+            }
+        }
     </style>
 </head>
 
@@ -70,9 +101,10 @@
             <img src="image/phone.png" alt="Phone" width="30px">
             <p>555-123-4567</p>
             <button>Contact</button>
-            <div class="call">
-                <img src="image/image.png" alt="Phone" width="30px">
-            </div>
+        </div>
+        <div class="call">
+            <img src="image/image.png" alt="Phone" width="30px">
+
         </div>
     </div>
 </body>
