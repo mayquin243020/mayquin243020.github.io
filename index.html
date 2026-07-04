@@ -69,30 +69,26 @@
     }
 
     .exercises {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
         margin-top: 60px;
-    }
-
-    .line1 {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        margin-top: 20px;
-    }
-
-    .line2 {
-        display: flex;
-        justify-content: center;
-        gap: 20px;
-        margin-top: 20px;
     }
 
     .container {
         width: 30%;
-        background-color: #FCFCDE;
-        opacity: 0.7;
+        background: #FCFCDE;
         border-radius: 15px;
-        padding: 15px 0px 15px 0px;
+        padding: 15px 0;
     }
+
+    .row {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+
 
     .week {
         width: 80%;
@@ -102,6 +98,12 @@
         border-bottom: 1px solid #070F2B;
         gap: 15px;
         align-items: center;
+    }
+
+    .week4-container {
+        width: 93%;
+        display: flex;
+        justify-content: center;
     }
 
     .exe {
@@ -137,6 +139,82 @@
         margin: auto;
         justify-content: center;
         color: #394596;
+    }
+
+    @media screen and (max-width: 1080px) {
+
+        .header {
+            padding: 10px 20px;
+        }
+
+        .content {
+            width: 90%;
+            margin: 50px auto 20px;
+        }
+
+        .intro h1 {
+            font-size: 30px;
+        }
+
+        .intro h2 {
+            font-size: 22px;
+        }
+
+        .intro p {
+            font-size: 16px;
+            line-height: 1.7;
+        }
+
+
+
+        .container {
+            width: 45%;
+        }
+
+        .line1,
+        .line2 {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .footer {
+            margin-top: 40px;
+        }
+    }
+
+    @media screen and (max-width:720px) {
+
+        .container {
+            width: 90%;
+        }
+
+        .exercises {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .header {
+            padding: 10px 15px;
+        }
+
+        .profile img {
+            width: 120px;
+            height: 120px;
+        }
+
+        .intro h1 {
+            font-size: 26px;
+        }
+
+        .intro h2 {
+            font-size: 20px;
+        }
+
+        .intro p {
+            font-size: 15px;
+        }
     }
 </style>
 
@@ -174,49 +252,45 @@
         </div>
     </div>
     <div class="exercises">
-        <div class="line1">
-            <div class="container">
-                <div class="week">
-                    <img src="image/check.png" alt="Check" width="30px" height="30px">
-                    <h2>Week 1</h2>
-                </div>
-                <div class="exe">
-                    <a href="week1/exe1.htm">Exercise 1</a>
-                    <a href="week1/exe2.html">Exercise 2</a>
-                </div>
+        <div class="container">
+            <div class="week">
+                <img src="image/check.png" alt="Check" width="30px" height="30px">
+                <h2>Week 1</h2>
             </div>
-            <div class="container">
-                <div class="week">
-                    <img src="image/check.png" alt="Check" width="30px" height="30px">
-                    <h2>Week 2</h2>
-                </div>
-                <div class="exe">
-                    <a href="week2/button.html">Exercise 1</a>
-                    <a href="week2/selfintro.html">Exercise 2</a>
-                    <a href="week2/artist.html">Exercise 3</a>
-                </div>
-            </div>
-            <div class="container">
-                <div class="week">
-                    <img src="image/check.png" alt="Check" width="30px" height="30px">
-                    <h2>Week 3</h2>
-                </div>
-                <div class="exe">
-                    <a href="week3/flexbox1.html">Exercise 1</a>
-                    <a href="week3/flexbox2.html">Exercise 2</a>
-                </div>
+            <div class="exe">
+                <a href="week1/exe1.htm">Exercise 1</a>
+                <a href="week1/exe2.html">Exercise 2</a>
             </div>
         </div>
-        <div class="line2">
-            <div class="container">
-                <div class="week">
-                    <img src="image/check.png" alt="Check" width="30px" height="30px">
-                    <h2>Week 4</h2>
-                </div>
-                <div class="exe">
-                    <a href="week4/menu.html">Exercise 1</a>
-                    <a href="week4/home.html">Exercise 2</a>
-                </div>
+        <div class="container">
+            <div class="week">
+                <img src="image/check.png" alt="Check" width="30px" height="30px">
+                <h2>Week 2</h2>
+            </div>
+            <div class="exe">
+                <a href="week2/button.html">Exercise 1</a>
+                <a href="week2/selfintro.html">Exercise 2</a>
+                <a href="week2/artist.html">Exercise 3</a>
+            </div>
+        </div>
+        <div class="container">
+            <div class="week">
+                <img src="image/check.png" alt="Check" width="30px" height="30px">
+                <h2>Week 3</h2>
+            </div>
+            <div class="exe">
+                <a href="week3/flexbox1.html">Exercise 1</a>
+                <a href="week3/flexbox2.html">Exercise 2</a>
+            </div>
+        </div>
+        <div class="container week4-container">
+            <div class=" week">
+                <img src="image/check.png" alt="Check" width="30px" height="30px">
+                <h2>Week 4</h2>
+            </div>
+            <div class="exe">
+                <a href="week4/menu.html">Exercise 1</a>
+                <a href="week4/home.html">Exercise 2</a>
             </div>
         </div>
     </div>
