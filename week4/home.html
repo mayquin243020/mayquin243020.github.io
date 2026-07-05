@@ -27,7 +27,7 @@
         align-items: center;
         display: flex;
         font-family: "Space Grotesk", sans-serif;
-        ;
+
     }
 
     .navbr a {
@@ -111,6 +111,161 @@
         margin: 60px 120px 0 120px;
         filter: grayscale(100%);
     }
+
+    .services {
+        margin: 120px;
+        font-family: "Space Grotesk", sans-serif;
+    }
+
+    .services-header {
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        margin-bottom: 60px;
+    }
+
+    .services-title {
+        background: #B9FF66;
+        padding: 8px 18px;
+        border-radius: 8px;
+        font-size: 40px;
+        font-weight: 500;
+    }
+
+    .services-description {
+        width: 600px;
+        font-size: 18px;
+        line-height: 1.5;
+    }
+
+    .services-container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .service-card {
+        width: 47%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 45px;
+        border: 2px solid #000;
+        border-radius: 45px;
+        box-shadow: 0 8px 0 #000;
+        box-sizing: border-box;
+    }
+
+    .light {
+        background: #F3F3F3;
+    }
+
+    .green {
+        background: #B9FF66;
+    }
+
+    .dark {
+        background: #191A23;
+    }
+
+    .service-left {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 220px;
+    }
+
+    .service-heading {
+        font-size: 30px;
+        font-weight: 500;
+        line-height: 1.25;
+        font-family: "Space Grotesk", sans-serif;
+    }
+
+    .service-heading span {
+        background: #fff;
+        padding: 4px 10px;
+        border-radius: 8px;
+        margin-bottom: 5px;
+    }
+
+    .dark-title span {
+        background: #B9FF66;
+    }
+
+    .learn-more {
+        display: flex;
+        align-items: center;
+        gap: 15px;
+        font-size: 20px;
+        font-weight: 500;
+        font-family: "Space Grotesk", sans-serif;
+    }
+
+    .learn-more img {
+        width: 40px;
+    }
+
+    .white {
+        color: white;
+    }
+
+    .service-right img {
+        width: 210px;
+        display: block;
+    }
+
+    .cta-section {
+        padding: 60px 20px;
+    }
+
+
+    .cta-container {
+        max-width: 1100px;
+        margin: auto;
+        background: #f3f3f3;
+        border-radius: 24px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 50px;
+        position: relative;
+        overflow: hidden;
+    }
+
+    .cta-text {
+        max-width: 55%;
+    }
+
+    .cta-text h2 {
+        font-size: 32px;
+        margin-bottom: 15px;
+        color: #000;
+    }
+
+    .cta-text p {
+        font-size: 16px;
+        color: #444;
+        margin-bottom: 25px;
+        line-height: 1.5;
+    }
+
+    .cta-btn {
+        background: #111;
+        color: #fff;
+        padding: 14px 22px;
+        border: none;
+        border-radius: 12px;
+        font-size: 14px;
+        cursor: pointer;
+    }
+
+
+    .cta-visual {
+        width: 260px;
+        height: 200px;
+    }
 </style>
 
 <body>
@@ -151,6 +306,228 @@
         <img src="image/netflix.png" width="10%">
         <img src="image/zoom.png" width="10%">
     </div>
+
+    <div class="services">
+
+        <div class="services-header">
+
+            <span class="services-title">
+                Services
+            </span>
+
+            <span class="services-description">
+                At our digital marketing agency, we offer a range of services to help
+                businesses grow and succeed online. These services include:
+            </span>
+
+        </div>
+
+        <div class="services-container">
+
+
+
+            <div class="service-card light">
+
+                <div class="service-left">
+
+                    <div class="service-heading">
+
+                        <span>Search engine</span><br>
+                        <span>optimization</span>
+
+                    </div>
+
+                    <div class="learn-more">
+
+                        <img src="image/arrow2.png" width="40">
+
+                        <span>Learn more</span>
+
+                    </div>
+
+                </div>
+
+                <div class="service-right">
+
+                    <img src="image/search.png">
+
+                </div>
+
+            </div>
+
+
+
+            <div class="service-card green">
+
+                <div class="service-left">
+
+                    <div class="service-heading">
+
+                        <span>Pay-per-click</span><br>
+                        <span>advertising</span>
+
+                    </div>
+
+                    <div class="learn-more">
+
+                        <img src="image/arrow2.png" width="40">
+
+                        <span>Learn more</span>
+
+                    </div>
+
+                </div>
+
+                <div class="service-right">
+
+                    <img src="image/pay.png">
+
+                </div>
+
+            </div>
+
+
+
+            <div class="service-card dark">
+
+                <div class="service-left">
+
+                    <div class="service-heading dark-title">
+
+                        <span>Social Media</span><br>
+                        <span>Marketing</span>
+
+                    </div>
+
+                    <div class="learn-more white">
+
+                        <img src="image/arrow1.png" width="40">
+
+                        <span>Learn more</span>
+
+                    </div>
+
+                </div>
+
+                <div class="service-right">
+
+                    <img src="image/social.png">
+
+                </div>
+
+            </div>
+
+
+            <div class="service-card light">
+
+                <div class="service-left">
+
+                    <div class="service-heading">
+
+                        <span>Email</span><br>
+                        <span>Marketing</span>
+
+                    </div>
+
+                    <div class="learn-more">
+
+                        <img src="image/arrow2.png" width="40">
+
+                        <span>Learn more</span>
+
+                    </div>
+
+                </div>
+
+                <div class="service-right">
+
+                    <img src="image/email.png">
+
+                </div>
+
+            </div>
+
+            <div class="service-card green">
+
+                <div class="service-left">
+
+                    <div class="service-heading">
+
+                        <span>Content</span><br>
+                        <span>Creation</span>
+
+                    </div>
+
+                    <div class="learn-more">
+
+                        <img src="image/arrow2.png" width="40">
+
+                        <span>Learn more</span>
+
+                    </div>
+
+                </div>
+
+                <div class="service-right">
+
+                    <img src="image/content.png">
+
+                </div>
+
+            </div>
+
+
+            <div class="service-card dark">
+
+                <div class="service-left">
+
+                    <div class="service-heading dark-title">
+
+                        <span>Analytics and</span><br>
+                        <span>Tracking</span>
+
+                    </div>
+
+                    <div class="learn-more white">
+
+                        <img src="image/arrow1.png" width="40">
+
+                        <span>Learn more</span>
+
+                    </div>
+
+                </div>
+
+                <div class="service-right">
+
+                    <img src="image/analytics.png">
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <section class="cta-section">
+        <div class="cta-container">
+
+
+            <div class="cta-text">
+                <h2>Let's make things happen</h2>
+
+                <p>
+                    Contact us today to learn more about how our digital marketing services
+                    can help your business grow and succeed online.
+                </p>
+
+                <button class="cta-btn">Get your free proposal</button>
+            </div>
+            <div class="cta-visual">
+                <img src="image/shape.png" alt="CTA Image" width="100%">
+            </div>
+        </div>
+    </section>
 </body>
 
 </html>
