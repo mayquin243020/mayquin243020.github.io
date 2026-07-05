@@ -48,6 +48,7 @@
         justify-content: space-between;
         align-items: center;
         margin: 30px 120px;
+        position: relative;
     }
 
     .mid {
@@ -68,13 +69,15 @@
         margin-right: 80px;
     }
 
-    .mid p {
+    .down p {
         font-weight: 400;
         font-size: 20px;
         width: 500px;
         margin-left: -8px;
-
     }
+
+
+
 
     .mid button {
         font-weight: 400;
@@ -266,6 +269,262 @@
         width: 260px;
         height: 200px;
     }
+
+    .cyan {
+        background: #B9FF66;
+    }
+
+
+    .white-bg {
+        background: #fff;
+        color: #000;
+    }
+
+
+    .seo-card .service-heading span {
+        background: #B9FF66;
+    }
+
+
+    .smm-card .service-heading span {
+        background: #fff;
+        color: #000;
+    }
+
+
+    .email-card .service-heading span {
+        background: #B9FF66;
+    }
+
+    @media screen and (max-width:1080px) {
+
+        .container {
+            width: 95%;
+        }
+
+        .top {
+            padding: 20px 0;
+        }
+
+        .hero {
+            margin: 50px 40px;
+            gap: 40px;
+        }
+
+        .mid {
+            width: 50%;
+        }
+
+        .side {
+            width: 50%;
+        }
+
+        .mid a {
+            font-size: 48px;
+            margin-right: 0;
+        }
+
+        .mid p {
+            width: 100%;
+            font-size: 18px;
+        }
+
+        .mid button {
+            padding: 18px 30px;
+        }
+
+        .brand {
+            margin: 50px 40px;
+        }
+
+        .brand img {
+            width: 12%;
+        }
+
+        .services {
+            margin: 80px 40px;
+        }
+
+        .services-header {
+            gap: 25px;
+        }
+
+        .services-description {
+            width: 450px;
+        }
+
+        .service-card {
+            width: 48%;
+            padding: 30px;
+        }
+
+        .service-right img {
+            width: 170px;
+        }
+
+        .cta-container {
+            padding: 40px;
+        }
+
+        .cta-text {
+            max-width: 60%;
+        }
+
+        .cta-visual {
+            width: 220px;
+        }
+
+    }
+
+
+
+    @media screen and (max-width:720px) {
+
+
+        .navbar a,
+        .request {
+            display: none;
+        }
+
+        .top::after {
+            content: "☰";
+            font-size: 34px;
+            cursor: pointer;
+        }
+
+        .hero {
+            flex-direction: column;
+            margin: 30px 20px;
+            align-items: center;
+            text-align: center;
+        }
+
+        .mid {
+            width: 100%;
+            order: 1;
+            align-items: center;
+        }
+
+        .mid a {
+            font-size: 34px;
+            margin: 0;
+            text-align: center;
+        }
+
+
+        .side {
+            width: 100%;
+            order: 2;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+
+        .side img {
+            width: 60%;
+            position: static;
+            top: 0;
+            z-index: auto;
+        }
+
+
+        .mid p {
+            order: 3;
+            width: 100%;
+            margin: 20px 0;
+            font-size: 16px;
+        }
+
+        .mid button {
+            order: 4;
+            width: 100%;
+        }
+
+
+        .brand {
+            margin: 40px 20px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            justify-content: center;
+        }
+
+        .brand img {
+            width: 30%;
+        }
+
+
+        .services {
+            margin: 60px 20px;
+        }
+
+        .services-header {
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+        }
+
+        .services-title {
+            font-size: 34px;
+        }
+
+        .services-description {
+            width: 100%;
+        }
+
+        .services-container {
+            flex-direction: column;
+        }
+
+        .service-card {
+            width: 100%;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 30px;
+        }
+
+        .service-left {
+            height: auto;
+            gap: 20px;
+            width: 100%;
+        }
+
+        .service-right {
+            width: 100%;
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        .service-right img {
+            width: 170px;
+        }
+
+        .learn-more span {
+            display: none;
+        }
+
+        .cta-container {
+            flex-direction: column;
+            text-align: left;
+        }
+
+        .cta-text {
+            max-width: 100%;
+        }
+
+        .cta-text h2,
+        .cta-text p {
+            margin-left: 0;
+        }
+
+        .cta-btn {
+            width: 100%;
+        }
+
+        .cta-visual {
+            display: none;
+        }
+    }
 </style>
 
 <body>
@@ -326,7 +585,7 @@
 
 
 
-            <div class="service-card light">
+            <div class="service-card light  seo-card">
 
                 <div class="service-left">
 
@@ -388,7 +647,7 @@
 
 
 
-            <div class="service-card dark">
+            <div class="service-card dark smm-card">
 
                 <div class="service-left">
 
@@ -418,7 +677,7 @@
             </div>
 
 
-            <div class="service-card light">
+            <div class="service-card light email-card">
 
                 <div class="service-left">
 
