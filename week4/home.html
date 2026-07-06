@@ -296,6 +296,10 @@
         background: #B9FF66;
     }
 
+    .hero-image-mobile {
+        display: none;
+    }
+
     @media screen and (max-width:1080px) {
 
         .container {
@@ -392,54 +396,40 @@
             cursor: pointer;
         }
 
+
         .hero {
             flex-direction: column;
-            margin: 30px 20px;
-            align-items: center;
-            text-align: center;
         }
 
         .mid {
             width: 100%;
-            order: 1;
-            align-items: center;
         }
-
-        .mid a {
-            font-size: 34px;
-            margin: 0;
-            text-align: center;
-        }
-
 
         .side {
-            width: 100%;
-            order: 2;
+            display: none;
+        }
+
+        .hero-image-mobile {
             display: flex;
             justify-content: center;
-            margin: 20px 0;
+            margin: 25px 0;
         }
 
-        .side img {
-            width: 60%;
-            position: static;
-            top: 0;
-            z-index: auto;
-        }
-
-
-        .mid p {
-            order: 3;
-            width: 100%;
-            margin: 20px 0;
-            font-size: 16px;
-        }
-
-        .mid button {
-            order: 4;
+        .hero-image-mobile img {
             width: 100%;
         }
 
+        .hero-title h1 {
+            text-align: left;
+        }
+
+        .hero-content p {
+            margin-top: 0;
+        }
+
+        .hero-content button {
+            width: 100%;
+        }
 
         .brand {
             margin: 40px 20px;
@@ -546,16 +536,32 @@
         </div>
     </div>
     <div class="hero">
+
         <div class="mid">
-            <a>Navigating the digital landscape for success</a>
-            <p>Our digital marketing agency helps businesses grow and succeed online through a range of service
-                including SEO,PPC social media marketing , and content creation.</p>
-            <button>Book a consultation</button>
+
+            <div class="hero-title">
+                <h1>Navigating the digital landscape for success</h1>
+            </div>
+
+            <div class="hero-image-mobile">
+                <img src="image/trumpet.png" alt="trumpet">
+            </div>
+
+            <div class="hero-content">
+                <p>
+                    Our digital marketing agency helps businesses grow and succeed online
+                    through a range of service including SEO, PPC, social media marketing,
+                    and content creation.
+                </p>
+
+                <button>Book a consultation</button>
+            </div>
+
+        </div>
+        <div class="side">
+            <img src="image/trumpet.png" alt="trumpet">
         </div>
 
-        <div class="side">
-            <img src="image/trumpet.png" alt="trumpet Image " width="70%">
-        </div>
     </div>
     <div class="brand">
         <img src="image/amazon.png" width="10%">
@@ -736,7 +742,7 @@
             </div>
 
 
-            <div class="service-card dark">
+            <div class="service-card dark smm-card">
 
                 <div class="service-left">
 
