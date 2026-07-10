@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+:root {
+    --font-text: "Space Grotesk", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+a,
+h1,
+h2,
+h3,
+h4,
+p,
+span {
+    font-family: var(--font-text);
+}
+
+a {
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    display: flex;
+    text-decoration: none;
+
+}
+
+.navbr a {
+    color: black;
+    text-decoration: none;
+}
+
+.request {
+    border: 1px black solid;
+    border-radius: 8px;
+    padding: 20px 30px;
+}
+
+.services {
+    margin: 120px;
+}
+
+.services-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.services-title {
+    background: #B9FF66;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 60px;
+}
+
+.services-description {
+    width: 600px;
+    line-height: 1.5;
+}
