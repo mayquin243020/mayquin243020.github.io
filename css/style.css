@@ -73,7 +73,7 @@
  }
 
  .container {
-     width: 30%;
+     width: 45%;
      background: #FCFCDE;
      border-radius: 15px;
      padding: 15px 0;
@@ -85,27 +85,14 @@
      gap: 20px;
  }
 
-
  .week {
      width: 80%;
      display: flex;
      justify-content: center;
+     align-items: center;
+     gap: 15px;
      margin: auto;
      border-bottom: 1px solid #070F2B;
-     gap: 15px;
-     align-items: center;
- }
-
- .week4-container {
-     width: 93%;
-     display: flex;
-     flex-direction: column;
-     align-items: center;
- }
-
- .week4-container .week {
-     width: 80%;
-     justify-content: center;
  }
 
  .exe {
