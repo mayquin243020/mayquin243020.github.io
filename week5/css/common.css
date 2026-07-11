@@ -13,6 +13,7 @@ h1,
 h2,
 h3,
 h4,
+h5,
 p,
 span {
     font-family: var(--font-text);
@@ -22,6 +23,12 @@ a {
     font-size: 20px;
     font-weight: 500;
 }
+
+.h1,
+h3 {
+    font-size: 30px;
+}
+
 
 .navbar a {
     color: black;
@@ -60,24 +67,274 @@ a {
 }
 
 .services {
-    margin: 120px;
+    max-width: 1280px;
+    margin: 80px auto 50px;
+    padding: 0 40px 0 20px;
 }
 
 .services-header {
     display: flex;
-    align-items: center;
-    gap: 40px;
-    margin-bottom: 60px;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 12px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
 }
 
 .services-title {
     background: #B9FF66;
     padding: 8px 18px;
     border-radius: 8px;
-    font-size: 60px;
+    font-size: 32px;
+    margin: 0;
+    text-align: center;
 }
 
 .services-description {
-    width: 600px;
-    line-height: 1.5;
+    width: auto;
+    max-width: 600px;
+    line-height: 1.4;
+    font-size: 16px;
+    margin: 0;
+    display: block;
+    align-self: center;
+}
+
+.footer-wrap {
+    background: #191A23;
+    margin-top: 100px;
+}
+
+.footer {
+    max-width: 1280px;
+    margin: auto;
+    padding: 60px;
+    color: white;
+    border-radius: 40px 40px 0 0;
+    background: #191A23;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer-logo img {
+    width: 180px;
+    filter: brightness(100%);
+}
+
+.footer-nav {
+    display: flex;
+    gap: 35px;
+}
+
+.footer-nav a {
+    color: white;
+    font-size: 18px;
+}
+
+.footer-social {
+    display: flex;
+    gap: 18px;
+}
+
+.footer-social img {
+    width: 34px;
+    height: 34px;
+}
+
+.footer-content {
+    margin: 50px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact {
+    width: 300px;
+}
+
+.contact-title {
+    display: inline-block;
+    background: #B9FF66;
+    color: black;
+    padding: 5px 12px;
+    border-radius: 8px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.contact p {
+    line-height: 1.8;
+}
+
+.subscribe {
+    background: #292A32;
+    border-radius: 20px;
+    padding: 50px;
+    display: flex;
+    gap: 20px;
+}
+
+.subscribe input {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid white;
+    border-radius: 12px;
+    background: transparent;
+    color: white;
+    font-size: 16px;
+}
+
+.subscribe button {
+    background: #B9FF66;
+    border: none;
+    border-radius: 12px;
+    padding: 20px 35px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.footer hr {
+    border: #555;
+}
+
+.footer-bottom {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+.footer-bottom a {
+    color: white;
+}
+
+
+
+@media screen and (max-width:1080px) {
+
+    .h1,
+    h3 {
+        font-size: 25px;
+    }
+
+
+    .container {
+        width: 90%;
+    }
+
+
+    .navbar a,
+    .request {
+        display: none;
+    }
+
+
+    .top::after {
+        display: block;
+        content: "☰";
+        font-size: 34px;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:720px) {
+
+    .h1,
+    h3 {
+        font-size: 15px;
+    }
+
+    .container {
+        width: 90%;
+    }
+
+
+    .top {
+        padding: 20px 0;
+    }
+
+    .services {
+        margin: 60px 20px;
+    }
+
+
+    .services-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 20px;
+    }
+
+
+    .services-title {
+        font-size: 34px;
+        text-align: center;
+    }
+
+
+    .services-description {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer {
+        padding: 40px 25px;
+    }
+
+    .footer-top,
+    .footer-content,
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
+    .subscribe {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .subscribe input,
+    .subscribe button {
+        width: 100%;
+    }
+
+    .footer-logo img {
+        width: 170px;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .footer-social {
+        justify-content: center;
+    }
+
+
+
+    .contact {
+        width: 100%;
+    }
+
+    .subscribe {
+        width: 100%;
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .subscribe input {
+        width: 100%;
+    }
+
+    .subscribe button {
+        width: 100%;
+    }
+
+
+
 }

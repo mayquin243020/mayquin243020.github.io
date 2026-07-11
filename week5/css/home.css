@@ -33,7 +33,7 @@
      display: flex;
      justify-content: space-between;
      align-items: center;
-     margin: 30px 120px;
+     margin: 30px 0px;
      position: relative;
  }
 
@@ -80,22 +80,18 @@
      display: block;
  }
 
- h2,
- p {
-     margin-left: 20px;
- }
 
  .brand {
      display: flex;
      justify-content: space-between;
      align-items: center;
-     padding: 15px;
+     padding: 15px 0;
      margin-top: 20px;
-     margin: 60px 120px 0 120px;
      filter: grayscale(100%);
  }
 
  .services-container {
+     max-width: 1280px;
      display: flex;
      justify-content: space-between;
      flex-wrap: wrap;
@@ -174,11 +170,12 @@
 
  .cta-section {
      padding: 60px 20px;
+     margin-bottom: 20px;
  }
 
 
  .cta-container {
-     max-width: 1100px;
+     max-width: 1280px;
      margin: auto;
      background: #f3f3f3;
      border-radius: 24px;
@@ -187,7 +184,7 @@
      align-items: center;
      padding: 50px;
      position: relative;
-     overflow: hidden;
+     margin-bottom: 50px;
  }
 
  .cta-text {
@@ -255,16 +252,8 @@
 
  @media screen and (max-width:1080px) {
 
-     .container {
-         width: 95%;
-     }
-
-     .top {
-         padding: 20px 0;
-     }
-
      .hero {
-         margin: 50px 40px;
+         margin: 50px 0;
          gap: 40px;
      }
 
@@ -272,26 +261,31 @@
          width: 50%;
      }
 
-     .side {
-         width: 50%;
-     }
-
-     .mid a {
+     .hero-title h1 {
          font-size: 48px;
-         margin-right: 0;
      }
 
-     .mid p {
+     .hero-content p {
          width: 100%;
          font-size: 18px;
+         margin-left: 0;
      }
 
      .mid button {
          padding: 18px 30px;
      }
 
+     .side {
+         width: 45%;
+     }
+
+
+
+     /* Brand */
+
      .brand {
-         margin: 50px 40px;
+         margin-top: 50px;
+         gap: 30px;
      }
 
      .brand img {
@@ -299,15 +293,11 @@
      }
 
      .services {
-         margin: 80px 40px;
+         margin: 80px 0;
      }
 
-     .services-header {
-         gap: 25px;
-     }
-
-     .services-description {
-         width: 450px;
+     .services-container {
+         gap: 30px;
      }
 
      .service-card {
@@ -315,8 +305,21 @@
          padding: 30px;
      }
 
+     .service-heading {
+         font-size: 25px;
+     }
+
      .service-right img {
-         width: 170px;
+         width: 150px;
+     }
+
+
+
+
+     /* CTA */
+
+     .cta-section {
+         padding: 40px 0;
      }
 
      .cta-container {
@@ -331,93 +334,107 @@
          width: 220px;
      }
 
+     .services-container {
+         max-width: 1280px;
+         gap: 20px;
+         align-items: center;
+     }
+
  }
 
 
 
+
+
  @media screen and (max-width:720px) {
+     .container {
+         padding: 0 20px;
+     }
 
+     .top {
+         flex-direction: column;
+         align-items: flex-start;
+         gap: 16px;
+     }
 
-     .navbar a,
+     .navbar {
+         flex-wrap: wrap;
+         gap: 12px 16px;
+     }
+
      .request {
-         display: none;
+         padding: 10px 14px;
      }
-
-     .top::after {
-         content: "☰";
-         font-size: 34px;
-         cursor: pointer;
-     }
-
 
      .hero {
          flex-direction: column;
+         margin: 40px 0;
+         gap: 20px;
      }
 
-     .mid {
-         width: 100%;
+     .hero-title h1 {
+         font-size: 38px;
      }
 
-     .side {
-         display: none;
-     }
 
      .hero-image-mobile {
          display: flex;
          justify-content: center;
-         margin: 25px 0;
+         width: 100%;
      }
+
 
      .hero-image-mobile img {
          width: 100%;
      }
 
-     .hero-title h1 {
-         text-align: left;
+
+     .side {
+         display: none;
      }
 
+
      .hero-content p {
-         margin-top: 0;
+         font-size: 16px;
+         margin-left: 0;
      }
+
 
      .hero-content button {
          width: 100%;
      }
 
+
      .brand {
-         margin: 40px 20px;
+         margin-top: 40px;
          display: flex;
          flex-wrap: wrap;
-         gap: 25px;
          justify-content: center;
+         gap: 25px;
      }
+
 
      .brand img {
          width: 30%;
      }
 
 
+
      .services {
-         margin: 60px 20px;
+         margin: 60px 0;
      }
+
 
      .services-header {
          flex-direction: column;
-         text-align: center;
          gap: 20px;
      }
 
-     .services-title {
-         font-size: 34px;
-     }
-
-     .services-description {
-         width: 100%;
-     }
 
      .services-container {
          flex-direction: column;
      }
+
 
      .service-card {
          width: 100%;
@@ -426,10 +443,16 @@
          padding: 30px;
      }
 
+
      .service-left {
+         width: 100%;
          height: auto;
          gap: 20px;
-         width: 100%;
+     }
+
+
+     .service-heading {
+         font-size: 26px;
      }
 
      .service-right {
@@ -438,33 +461,45 @@
          justify-content: flex-end;
      }
 
+
      .service-right img {
          width: 170px;
      }
+
 
      .learn-more span {
          display: none;
      }
 
+
+
+
+     /* CTA */
+
      .cta-container {
          flex-direction: column;
-         text-align: left;
+         padding: 30px;
      }
+
 
      .cta-text {
          max-width: 100%;
      }
+
 
      .cta-text h2,
      .cta-text p {
          margin-left: 0;
      }
 
+
      .cta-btn {
          width: 100%;
      }
 
+
      .cta-visual {
          display: none;
      }
+
  }

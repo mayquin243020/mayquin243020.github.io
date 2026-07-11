@@ -13,13 +13,24 @@
         background: #fff;
     }
 
+    .container {
+        max-width: 1280px;
+        margin: auto;
+    }
+
     .box {
         max-width: 1200px;
         margin: auto;
         padding: 60px 40px;
     }
 
+    .firstpro {
+        display: block;
+    }
 
+    .hide {
+        display: none;
+    }
 
     .section-title {
         display: flex;
@@ -40,7 +51,10 @@
 
     }
 
-
+    .container2 {
+        max-width: 1280px;
+        margin: auto;
+    }
 
     .case-study {
         background: #191A23;
@@ -72,6 +86,48 @@
         margin: 0 30px;
     }
 
+    .first {
+        border: 2px solid black;
+        border-radius: 35px;
+        padding: 30px;
+        margin-bottom: 25px;
+        box-shadow: 0 6px black;
+        background-color: #F3F3F3;
+    }
+
+    .hide {
+        display: none;
+    }
+
+    .first.active {
+        background: #B9FF66;
+    }
+
+    .first-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .first-title {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .first-header span {
+
+        font-weight: 700;
+    }
+
+    .first button {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: 2px solid black;
+        background: #F3F3F3;
+        font-size: 28px;
+    }
 
 
     .process {
@@ -117,22 +173,20 @@
         margin: 25px 0;
     }
 
-
-
     .team-grid {
         margin-top: 50px;
-        display: flex;
-        flex-wrap: wrap;
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
         gap: 30px;
     }
 
     .team-card {
-        flex: 0 0 calc((100% - 60px) / 3);
         box-sizing: border-box;
         border: 2px solid black;
         border-radius: 30px;
         padding: 25px;
         box-shadow: 0 6px black;
+        position: relative;
     }
 
     .up {
@@ -142,17 +196,191 @@
     }
 
     .up img {
-        width: 20%;
-        height: 20%;
-
+        width: 80px;
+        height: 80px;
     }
 
-    .team-card {
-        margin: 20px 0;
+    .member-info {
+        width: 180px;
+    }
+
+    .member-info h4 {
+        margin: 0 0 3px;
+    }
+
+    .member-info span {
+        display: block;
+        line-height: 1.2;
+    }
+
+    .linkedin-icon {
+        width: 25px;
+        height: auto;
+        object-fit: contain;
+        margin-left: 6px;
     }
 
     .team-card p {
         line-height: 1.6;
+    }
+
+    .team-btn {
+        display: flex;
+        justify-content: flex-end;
+        max-width: 1280px;
+        margin: 20px auto 100px;
+    }
+
+    .see-team-btn {
+        background: #191A23;
+        color: white;
+        text-decoration: none;
+        padding: 22px 70px;
+        border-radius: 14px;
+        font-size: 20px;
+
+    }
+
+    .last {
+        display: none;
+    }
+
+    .see-team-btn:hover {
+        background: #2b2c38;
+    }
+
+    @media screen and (max-width:1080px) {
+        .container {
+            width: 90%;
+        }
+
+        .navbar a,
+        .request {
+            display: none;
+        }
+
+        .top::after {
+            content: "☰";
+            font-size: 34px;
+            cursor: pointer;
+        }
+
+        .case-study {
+            flex-direction: column;
+            gap: 40px;
+            padding: 40px;
+        }
+
+        .divider {
+            display: none;
+        }
+
+        .team-grid {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .team-card {
+            width: calc(50% - 10px);
+            min-width: 280px;
+        }
+
+        .footer-top,
+        .footer-content,
+        .footer-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .footer-nav {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 10px;
+        }
+
+        .subscribe {
+            display: flex;
+            gap: 10px;
+            width: auto;
+        }
+    }
+
+    @media screen and (max-width:720px) {
+        .container {
+            width: 90%;
+        }
+
+        .services {
+            margin: 60px 20px;
+            text-align: center;
+        }
+
+        .services-header {
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .case-study {
+            flex-direction: column;
+            padding: 30px;
+            border-radius: 20px;
+        }
+
+        .team-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .team-card {
+            width: 100%;
+            margin: 15px 0;
+        }
+
+
+        .team-grid {
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+        }
+
+        .team-btn {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            margin: 20px 0 80px;
+        }
+
+        .see-team-btn {
+            width: 100%;
+            text-align: center;
+            padding: 22px 0;
+            font-size: 20px;
+        }
+
+
+        .last {
+            display: block;
+
+        }
+
+        .hide {
+            display: block;
+        }
+
+        .firstpro {
+            display: none;
+        }
     }
 </style>
 
@@ -169,10 +397,12 @@
                 <a>Pricing </a>
                 <a>Blog</a>
                 <a href="week5/casestudy.html">CaseStudy</a>
+                <div class="request">
+                    <a>Request a quote </a>
+                </div>
             </div>
         </div>
     </div>
-
     <div class="services">
 
         <div class="services-header">
@@ -188,7 +418,7 @@
         </div>
     </div>
 
-    <div class="container">
+    <div class="container2">
         <section class="case-study">
             <div class="case-card">
                 <p>
@@ -220,6 +450,7 @@
                 </p>
                 <a href="#">Learn more ↗</a>
             </div>
+
         </section>
     </div>
 
@@ -242,105 +473,122 @@
 
 
     <div class="container">
-        <div class="process active">
+        <div class="firstpro">
+            <div class="process active">
+
+                <div class="process-header">
+
+                    <div class="process-title">
+                        <h1>01</h1>
+                        <h3>Consultation</h3>
+                    </div>
+
+                    <button>-</button>
+                </div>
+                <hr>
+
+                <p>
+                    During the initial consultation, we will discuss your business goals and objectives,
+                    target audience, and current marketing efforts.
+                </p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container">
+        <div class=" hide ">
+            <div class="first">
+
+                <div class="first-header">
+
+                    <div class=" first-title">
+                        <h1>01</h1>
+                        <h3>Consultatio</h3>
+                    </div>
+
+                    <button>+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="process">
 
             <div class="process-header">
 
                 <div class="process-title">
-                    <span>01</span>
-                    <h3>Consultation</h3>
+                    <h1>02</h1>
+                    <h3>Research and Strategy Development</h3>
                 </div>
 
-                <button>-</button>
+                <button>+</button>
 
             </div>
-
-            <hr>
-
-            <p>
-                During the initial consultation, we will discuss your business goals and objectives,
-                target audience, and current marketing efforts.
-            </p>
 
         </div>
 
-        <div class="container">
-            <div class="process">
 
-                <div class="process-header">
+        <div class="process">
 
-                    <div class="process-title">
-                        <span>02</span>
-                        <h3>Research and Strategy Development</h3>
-                    </div>
+            <div class="process-header">
 
-                    <button>+</button>
-
+                <div class="process-title">
+                    <h1>03</h1>
+                    <h3>Implementation</h3>
                 </div>
+
+                <button>+</button>
 
             </div>
 
+        </div>
 
-            <div class="process">
 
-                <div class="process-header">
+        <div class="process">
 
-                    <div class="process-title">
-                        <span>03</span>
-                        <h3>Implementation</h3>
-                    </div>
+            <div class="process-header">
 
-                    <button>+</button>
-
+                <div class="process-title">
+                    <h1>04</h1>
+                    <h3>Monitoring and Optimization</h3>
                 </div>
+
+                <button>+</button>
 
             </div>
 
+        </div>
 
-            <div class="process">
 
-                <div class="process-header">
+        <div class="process">
 
-                    <div class="process-title">
-                        <span>04</span>
-                        <h3>Monitoring and Optimization</h3>
-                    </div>
+            <div class="process-header">
 
-                    <button>+</button>
-
+                <div class="process-title">
+                    <h1>05</h1>
+                    <h3>Reporting and Communication</h3>
                 </div>
+
+                <button>+</button>
 
             </div>
 
+        </div>
 
-            <div class="process">
 
-                <div class="process-header">
+        <div class="process">
 
-                    <div class="process-title">
-                        <span>05</span>
-                        <h3>Reporting and Communication</h3>
-                    </div>
+            <div class="process-header">
 
-                    <button>+</button>
-
+                <div class="process-title">
+                    <h1>06</h1>
+                    <h3>Continual Improvement</h3>
                 </div>
 
-            </div>
+                <button>+</button>
 
-
-            <div class="process">
-
-                <div class="process-header">
-
-                    <div class="process-title">
-                        <span>06</span>
-                        <h3>Continual Improvement</h3>
-                    </div>
-
-                    <button>+</button>
-
-                </div>
             </div>
         </div>
     </div>
@@ -365,10 +613,11 @@
             <div class="team-card">
                 <div class="up">
                     <img src="image/john.png" alt="">
-                    <div>
+                    <div class="member-info">
                         <h4>John Smith</h4>
                         <span>CEO and Founder</span>
                     </div>
+                    <img src="image/linked.png" class="linkedin-icon" alt="LinkedIn">
                 </div>
 
                 <hr>
@@ -381,12 +630,12 @@
             <div class="team-card">
                 <div class="up">
                     <img src="image/jane.png" alt="">
-                    <div>
+                    <div class="member-info">
                         <h4>Jane Doe</h4>
                         <span>Director of Operations</span>
                     </div>
+                    <img src="image/linked.png" class="linkedin-icon" alt="LinkedIn">
                 </div>
-
                 <hr>
 
                 <p>
@@ -398,10 +647,11 @@
             <div class="team-card">
                 <div class="up">
                     <img src="image/michael.png" alt="">
-                    <div>
+                    <div class="member-info">
                         <h4>Michael Brown</h4>
                         <span>Senior SEO Specialist</span>
                     </div>
+                    <img src="image/linked.png" class="linkedin-icon" alt="LinkedIn">
                 </div>
 
                 <hr>
@@ -415,10 +665,12 @@
             <div class="team-card">
                 <div class="up">
                     <img src="image/emily.png" alt="40">
-                    <div>
+                    <div class="member-info">
+
                         <h4>Emily Johnson</h4>
                         <span>PPC Manager</span>
                     </div>
+                    <img src="image/linked.png" class="linkedin-icon" alt="LinkedIn">
                 </div>
 
                 <hr>
@@ -433,10 +685,11 @@
             <div class="team-card">
                 <div class="up">
                     <img src="image/brian.png" alt="40">
-                    <div>
+                    <div class="member-info">
                         <h4>Brian Williams</h4>
                         <span>Social Media Specialist</span>
                     </div>
+                    <img src="image/linked.png" class="linkedin-icon" alt="LinkedIn">
                 </div>
 
                 <hr>
@@ -450,10 +703,11 @@
             <div class="team-card">
                 <div class="up">
                     <img src="image/sarah.png" alt="40">
-                    <div>
+                    <div class="member-info">
                         <h4>Sarah Kim</h4>
                         <span>Content Creator</span>
                     </div>
+                    <img src="image/linked.png" class="linkedin-icon" alt="LinkedIn">
                 </div>
 
                 <hr>
@@ -462,10 +716,90 @@
                     2+ years of experience in writing and editing
                     Skilled in creating compelling, SEO-optimized content for various industries
                 </p>
+
             </div>
         </div>
-
+        <div class="team-btn">
+            <a href="#" class="see-team-btn">See all team</a>
+        </div>
     </div>
+
+    <div class="last">
+        <div class="services">
+            <div class="services-header">
+                <span class="services-title">
+                    Testimonials
+                </span>
+
+                <span class="services-description">
+                    Hear from Our Satisfied Clients Read Our Testimonials to Learn More About Our Digital Marketing
+                    Services.
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+
+        <div class="footer-top">
+
+            <div class="footer-logo">
+                <img src="image/logo2.png" alt="Positivus Logo">
+            </div>
+            <div class="footer-nav">
+                <a href="#">About us</a>
+                <a href="#">Services</a>
+                <a href="#">Use Cases</a>
+                <a href="#">Pricing</a>
+                <a href="#">Blog</a>
+            </div>
+
+            <div class="footer-social">
+                <img src="image/socialicon.png" alt="">
+                <img src="image/facebook.png" alt="">
+                <img src="image/twitter.png" alt="">
+            </div>
+
+        </div>
+
+        <div class="footer-content">
+
+            <div class="contact">
+
+                <span class="contact-title">Contact us:</span>
+
+                <p>Email: info@positivus.com</p>
+
+                <p>Phone: 555-567-8901</p>
+
+                <p>
+                    Address: 1234 Main St<br>
+                    Moonstone City, Stardust State 12345
+                </p>
+
+            </div>
+
+            <div class="subscribe">
+
+                <input type="email" placeholder="Email">
+
+                <button>Subscribe to news</button>
+
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="footer-bottom">
+
+            <p>© 2023 Positivus. All Rights Reserved.</p>
+
+            <a href="#">Privacy Policy</a>
+
+        </div>
+
+    </footer>
 </body>
 
 </html>
