@@ -44,6 +44,7 @@ h3 {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
 }
 
 .navbar {
@@ -213,7 +214,41 @@ h3 {
 
 
 
+@media screen and (max-width:1200px) {
+    .top {
+        gap: 16px;
+    }
+
+    .navbar {
+        gap: 22px;
+    }
+
+    .navbar a {
+        font-size: 18px;
+    }
+
+    .request {
+        padding: 14px 20px;
+    }
+}
+
 @media screen and (max-width:1080px) {
+    .top {
+        position: relative;
+    }
+
+    .top::after {
+        display: block;
+        content: "☰";
+        font-size: 34px;
+        cursor: pointer;
+        line-height: 1;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 10;
+    }
 
     .h1,
     h3 {
@@ -231,12 +266,31 @@ h3 {
         display: none;
     }
 
+    .footer-top,
+    .footer-content,
+    .footer-bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        flex-wrap: wrap;
+    }
 
-    .top::after {
-        display: block;
-        content: "☰";
-        font-size: 34px;
-        cursor: pointer;
+    .footer-nav {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 15px;
+    }
+
+    .footer-social {
+        display: flex;
+        gap: 10px;
+    }
+
+    .subscribe {
+        display: flex;
+        gap: 10px;
+        width: auto;
     }
 }
 
@@ -302,6 +356,19 @@ h3 {
         width: 100%;
     }
 
+
+    .footer {
+        padding: 40px 25px;
+    }
+
+    .footer-top,
+    .footer-content,
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+        gap: 25px;
+    }
+
     .footer-logo img {
         width: 170px;
     }
@@ -315,8 +382,6 @@ h3 {
         justify-content: center;
     }
 
-
-
     .contact {
         width: 100%;
     }
@@ -327,10 +392,7 @@ h3 {
         padding: 30px 20px;
     }
 
-    .subscribe input {
-        width: 100%;
-    }
-
+    .subscribe input,
     .subscribe button {
         width: 100%;
     }

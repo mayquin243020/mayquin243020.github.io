@@ -281,7 +281,7 @@
 
 
 
-     /* Brand */
+
 
      .brand {
          margin-top: 50px;
@@ -316,7 +316,7 @@
 
 
 
-     /* CTA */
+
 
      .cta-section {
          padding: 40px 0;
@@ -368,14 +368,20 @@
 
      .hero {
          flex-direction: column;
-         margin: 40px 0;
-         gap: 20px;
+         margin: 16px 0;
+         gap: 12px;
+         align-items: stretch;
+     }
+
+     .mid {
+         width: 100%;
+         gap: 10px;
      }
 
      .hero-title h1 {
-         font-size: 38px;
+         font-size: 28px;
+         line-height: 1.1;
      }
-
 
      .hero-image-mobile {
          display: flex;
@@ -383,39 +389,37 @@
          width: 100%;
      }
 
-
      .hero-image-mobile img {
          width: 100%;
+         max-width: 320px;
      }
-
 
      .side {
          display: none;
      }
 
-
      .hero-content p {
-         font-size: 16px;
+         font-size: 15px;
          margin-left: 0;
+         line-height: 1.5;
      }
-
 
      .hero-content button {
          width: 100%;
+         padding: 16px 20px;
      }
 
-
      .brand {
-         margin-top: 40px;
+         margin-top: 28px;
          display: flex;
          flex-wrap: wrap;
          justify-content: center;
-         gap: 25px;
+         gap: 16px 18px;
      }
 
-
      .brand img {
-         width: 30%;
+         width: 28%;
+         min-width: 70px;
      }
 
 
@@ -474,7 +478,6 @@
 
 
 
-     /* CTA */
 
      .cta-container {
          flex-direction: column;
