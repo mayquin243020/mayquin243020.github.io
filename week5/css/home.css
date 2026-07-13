@@ -19,12 +19,12 @@
  }
 
  .navbr a {
-     color: black;
+     color: var(--black);
      text-decoration: none;
  }
 
  .request {
-     border: 1px black solid;
+     border: 1px var(--black);
      border-radius: 8px;
      padding: 20px 30px;
  }
@@ -64,8 +64,8 @@
  .mid button {
      font-weight: 400;
      font-size: 20px;
-     color: white;
-     background-color: black;
+     color: var(--white);
+     background-color: var(--black);
      padding: 20px 35px;
      border-radius: 14px;
      margin-top: 20px;
@@ -104,22 +104,22 @@
      justify-content: space-between;
      align-items: center;
      padding: 45px;
-     border: 2px solid #000;
+     border: 2px solid var(--black);
      border-radius: 45px;
-     box-shadow: 0 8px 0 #000;
+     box-shadow: 0 8px 0 var(--black);
      box-sizing: border-box;
  }
 
  .light {
-     background: #F3F3F3;
+     background: var(--white);
  }
 
  .green {
-     background: #B9FF66;
+     background: var(--green);
  }
 
  .dark {
-     background: #191A23;
+     background: var(--black);
  }
 
  .service-left {
@@ -136,14 +136,14 @@
  }
 
  .service-heading span {
-     background: #fff;
+     background: var(--white);
      padding: 4px 10px;
      border-radius: 8px;
      margin-bottom: 5px;
  }
 
  .dark-title span {
-     background: #B9FF66;
+     background: var(--green);
  }
 
  .learn-more {
@@ -160,7 +160,7 @@
  }
 
  .white {
-     color: white;
+     color: var(--white);
  }
 
  .service-right img {
@@ -177,7 +177,7 @@
  .cta-container {
      max-width: 1280px;
      margin: auto;
-     background: #f3f3f3;
+     background: var(--white);
      border-radius: 24px;
      display: flex;
      justify-content: space-between;
@@ -194,19 +194,19 @@
  .cta-text h2 {
      font-size: 32px;
      margin-bottom: 15px;
-     color: #000;
+     color: var(--black);
  }
 
  .cta-text p {
      font-size: 16px;
-     color: #444;
+     color: var(--grey);
      margin-bottom: 25px;
      line-height: 1.5;
  }
 
  .cta-btn {
-     background: #111;
-     color: #fff;
+     background: var(--black);
+     color: var(--white);
      padding: 14px 22px;
      border: none;
      border-radius: 12px;
@@ -221,29 +221,29 @@
  }
 
  .cyan {
-     background: #B9FF66;
+     background: var(--green);
  }
 
 
  .white-bg {
-     background: #fff;
-     color: #000;
+     background: var(--white);
+     color: var(--black);
  }
 
 
  .seo-card .service-heading span {
-     background: #B9FF66;
+     background: var(--green);
  }
 
 
  .smm-card .service-heading span {
-     background: #fff;
-     color: #000;
+     background: var(--white);
+     color: var(--black);
  }
 
 
  .email-card .service-heading span {
-     background: #B9FF66;
+     background: var(--green);
  }
 
  .hero-image-mobile {

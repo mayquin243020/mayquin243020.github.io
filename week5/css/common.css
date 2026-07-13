@@ -2,6 +2,11 @@
 
 :root {
     --font-text: "Space Grotesk", sans-serif;
+    --white: #ffff;
+    --green: #B9FF66;
+    --black: #191A23;
+    --grey: #444;
+
 }
 
 * {
@@ -31,7 +36,7 @@ h3 {
 
 
 .navbar a {
-    color: black;
+    color: var(--black);
     text-decoration: none;
 }
 
@@ -57,7 +62,7 @@ h3 {
 }
 
 .navbr a {
-    color: black;
+    color: var(--black);
     text-decoration: none;
 }
 
@@ -83,7 +88,7 @@ h3 {
 }
 
 .services-title {
-    background: #B9FF66;
+    background: var(--green);
     padding: 8px 18px;
     border-radius: 8px;
     font-size: 32px;
@@ -102,7 +107,7 @@ h3 {
 }
 
 .footer-wrap {
-    background: #191A23;
+    background: var(--black);
     margin-top: 100px;
 }
 

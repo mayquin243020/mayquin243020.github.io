@@ -1,5 +1,5 @@
  body {
-     background: #fff;
+     background: var(--white);
      margin-bottom: 0%;
  }
 
@@ -30,7 +30,7 @@
  }
 
  .section-title h2 {
-     background: #B9FF66;
+     background: var(--green);
      padding: 6px 14px;
      border-radius: 6px;
 
@@ -61,10 +61,10 @@
  }
 
  .case-study {
-     background: #191A23;
+     background: var(--black);
      border-radius: 40px;
      padding: 50px;
-     color: white;
+     color: var(--white);
      display: flex;
      justify-content: space-between;
      margin-bottom: 120px;
@@ -80,23 +80,23 @@
  }
 
  .case-card a {
-     color: #B9FF66;
+     color: var(--green);
      text-decoration: none;
  }
 
  .divider {
      width: 1px;
-     background: white;
+     background: var(--white);
      margin: 0 30px;
  }
 
  .first {
-     border: 2px solid black;
+     border: 2px solid var(--black);
      border-radius: 35px;
      padding: 30px;
      margin-bottom: 25px;
-     box-shadow: 0 6px black;
-     background-color: #F3F3F3;
+     box-shadow: 0 6px var(--black);
+     background-color: var(--white);
  }
 
  .hide {
@@ -104,7 +104,7 @@
  }
 
  .first.active {
-     background: #B9FF66;
+     background: var(--green);
  }
 
  .first-header {
@@ -128,23 +128,23 @@
      width: 50px;
      height: 50px;
      border-radius: 50%;
-     border: 2px solid black;
-     background: #F3F3F3;
+     border: 2px solid var(--black);
+     background: var(--white);
      font-size: 28px;
  }
 
 
  .process {
-     border: 2px solid black;
+     border: 2px solid var(--black);
      border-radius: 35px;
      padding: 30px;
      margin-bottom: 25px;
-     box-shadow: 0 6px black;
-     background-color: #F3F3F3;
+     box-shadow: 0 6px var(--black);
+     background-color: var(--white);
  }
 
  .process.active {
-     background: #B9FF66;
+     background: var(--green);
  }
 
  .process-header {
@@ -168,8 +168,8 @@
      width: 50px;
      height: 50px;
      border-radius: 50%;
-     border: 2px solid black;
-     background: #F3F3F3;
+     border: 2px solid var(--black);
+     background: var(--white);
      font-size: 28px;
  }
 
@@ -186,10 +186,10 @@
 
  .team-card {
      box-sizing: border-box;
-     border: 2px solid black;
+     border: 2px solid var(--black);
      border-radius: 30px;
      padding: 25px;
-     box-shadow: 0 6px black;
+     box-shadow: 0 6px var(--black);
      position: relative;
  }
 
@@ -236,8 +236,8 @@
  }
 
  .see-team-btn {
-     background: #191A23;
-     color: white;
+     background: var(--black);
+     color: var(--white);
      text-decoration: none;
      padding: 22px 70px;
      border-radius: 14px;
@@ -245,13 +245,7 @@
 
  }
 
- .last {
-     display: none;
- }
 
- .see-team-btn:hover {
-     background: #2b2c38;
- }
 
  @media screen and (max-width:1080px) {
      .container {
@@ -291,15 +285,7 @@
          width: 90%;
      }
 
-     .services {
-         margin: 60px 20px;
-         text-align: center;
-     }
 
-     .services-header {
-         flex-direction: column;
-         gap: 20px;
-     }
 
      .case-study {
          flex-direction: column;
@@ -379,8 +365,8 @@
          width: 100%;
          min-width: 0;
          min-height: auto;
-         background: #191A23;
-         color: #fff;
+         background: var(--black);
+         color: var(--white);
          padding: 24px;
          border-radius: 24px;
          box-sizing: border-box;
@@ -393,7 +379,7 @@
 
      .project-box a {
          font-size: 16px;
-         color: #B9FF66;
+         color: var(--green);
      }
 
      .firstbox {
