@@ -1,0 +1,507 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+.container {
+    max-width: 1280px;
+    margin: auto;
+}
+
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    display: flex;
+    font-family: "Space Grotesk", sans-serif;
+
+}
+
+.navbr a {
+    color: black;
+    text-decoration: none;
+}
+
+.request {
+    border: 1px black solid;
+    font-family: "Space Grotesk", sans-serif;
+    ;
+    border-radius: 8px;
+    padding: 20px 30px;
+}
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px 120px;
+    position: relative;
+}
+
+.mid {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    width: 45%;
+
+}
+
+.mid a {
+    margin-top: 50px;
+    font-weight: 500;
+    font-style: medium;
+    font-size: 60px;
+    margin-right: 80px;
+}
+
+.down p {
+    font-weight: 400;
+    font-size: 20px;
+    width: 500px;
+    margin-left: -8px;
+}
+
+
+
+
+.mid button {
+    font-weight: 400;
+    font-size: 20px;
+    color: white;
+    background-color: black;
+    padding: 20px 35px;
+    border-radius: 14px;
+    margin-top: 20px;
+}
+
+.side {
+    width: 45%
+}
+
+.side img {
+    width: 100%;
+    display: block;
+}
+
+h2,
+p {
+    margin-left: 20px;
+    font-family: "Space Grotesk", sans-serif;
+    ;
+}
+
+.brand {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    margin-top: 20px;
+    margin: 60px 120px 0 120px;
+    filter: grayscale(100%);
+}
+
+.services {
+    margin: 120px;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.services-header {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+}
+
+.services-title {
+    background: #B9FF66;
+    padding: 8px 18px;
+    border-radius: 8px;
+    font-size: 40px;
+    font-weight: 500;
+}
+
+.services-description {
+    width: 600px;
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.services-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.service-card {
+    width: 47%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 45px;
+    border: 2px solid #000;
+    border-radius: 45px;
+    box-shadow: 0 8px 0 #000;
+    box-sizing: border-box;
+}
+
+.light {
+    background: #F3F3F3;
+}
+
+.green {
+    background: #B9FF66;
+}
+
+.dark {
+    background: #191A23;
+}
+
+.service-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 220px;
+}
+
+.service-heading {
+    font-size: 30px;
+    font-weight: 500;
+    line-height: 1.25;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.service-heading span {
+    background: #fff;
+    padding: 4px 10px;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.dark-title span {
+    background: #B9FF66;
+}
+
+.learn-more {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+    font-weight: 500;
+    font-family: "Space Grotesk", sans-serif;
+}
+
+.learn-more img {
+    width: 40px;
+}
+
+.white {
+    color: white;
+}
+
+.service-right img {
+    width: 210px;
+    display: block;
+}
+
+.cta-section {
+    padding: 60px 20px;
+}
+
+
+.cta-container {
+    max-width: 1100px;
+    margin: auto;
+    background: #f3f3f3;
+    border-radius: 24px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-text {
+    max-width: 55%;
+}
+
+.cta-text h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+    color: #000;
+}
+
+.cta-text p {
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 25px;
+    line-height: 1.5;
+}
+
+.cta-btn {
+    background: #111;
+    color: #fff;
+    padding: 14px 22px;
+    border: none;
+    border-radius: 12px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+
+.cta-visual {
+    width: 260px;
+    height: 200px;
+}
+
+.cyan {
+    background: #B9FF66;
+}
+
+
+.white-bg {
+    background: #fff;
+    color: #000;
+}
+
+
+.seo-card .service-heading span {
+    background: #B9FF66;
+}
+
+
+.smm-card .service-heading span {
+    background: #fff;
+    color: #000;
+}
+
+
+.email-card .service-heading span {
+    background: #B9FF66;
+}
+
+.hero-image-mobile {
+    display: none;
+}
+
+@media screen and (max-width:1080px) {
+
+    .container {
+        width: 95%;
+    }
+
+    .top {
+        padding: 20px 0;
+    }
+
+    .hero {
+        margin: 50px 40px;
+        gap: 40px;
+    }
+
+    .mid {
+        width: 50%;
+    }
+
+    .side {
+        width: 50%;
+    }
+
+    .mid a {
+        font-size: 48px;
+        margin-right: 0;
+    }
+
+    .mid p {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .mid button {
+        padding: 18px 30px;
+    }
+
+    .brand {
+        margin: 50px 40px;
+    }
+
+    .brand img {
+        width: 12%;
+    }
+
+    .services {
+        margin: 80px 40px;
+    }
+
+    .services-header {
+        gap: 25px;
+    }
+
+    .services-description {
+        width: 450px;
+    }
+
+    .service-card {
+        width: 48%;
+        padding: 30px;
+    }
+
+    .service-right img {
+        width: 170px;
+    }
+
+    .cta-container {
+        padding: 40px;
+    }
+
+    .cta-text {
+        max-width: 60%;
+    }
+
+    .cta-visual {
+        width: 220px;
+    }
+
+}
+
+
+
+@media screen and (max-width:720px) {
+
+
+    .navbar a,
+    .request {
+        display: none;
+    }
+
+    .top::after {
+        content: "☰";
+        font-size: 34px;
+        cursor: pointer;
+    }
+
+
+    .hero {
+        flex-direction: column;
+    }
+
+    .mid {
+        width: 100%;
+    }
+
+    .side {
+        display: none;
+    }
+
+    .hero-image-mobile {
+        display: flex;
+        justify-content: center;
+        margin: 25px 0;
+    }
+
+    .hero-image-mobile img {
+        width: 100%;
+    }
+
+    .hero-title h1 {
+        text-align: left;
+    }
+
+    .hero-content p {
+        margin-top: 0;
+    }
+
+    .hero-content button {
+        width: 100%;
+    }
+
+    .brand {
+        margin: 40px 20px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 25px;
+        justify-content: center;
+    }
+
+    .brand img {
+        width: 30%;
+    }
+
+
+    .services {
+        margin: 60px 20px;
+    }
+
+    .services-header {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .services-title {
+        font-size: 34px;
+    }
+
+    .services-description {
+        width: 100%;
+    }
+
+    .services-container {
+        flex-direction: column;
+    }
+
+    .service-card {
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 30px;
+    }
+
+    .service-left {
+        height: auto;
+        gap: 20px;
+        width: 100%;
+    }
+
+    .service-right {
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+    }
+
+    .service-right img {
+        width: 170px;
+    }
+
+    .learn-more span {
+        display: none;
+    }
+
+    .cta-container {
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .cta-text {
+        max-width: 100%;
+    }
+
+    .cta-text h2,
+    .cta-text p {
+        margin-left: 0;
+    }
+
+    .cta-btn {
+        width: 100%;
+    }
+
+    .cta-visual {
+        display: none;
+    }
+}

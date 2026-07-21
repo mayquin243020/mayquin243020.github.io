@@ -1,0 +1,23 @@
+  body {
+      background-color: lightblue;
+  }
+
+  h1 {
+      color: #1b100a;
+      text-align: left;
+      font-size: 60px;
+
+  }
+
+  h2 {
+      padding: 10px 10px 10px 20px;
+      background-color: #FFF0D9;
+      color: #333D6D;
+      text-align: left;
+
+  }
+
+  p {
+      font-size: 20px;
+      color: #1b100a;
+  }

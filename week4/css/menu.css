@@ -1,0 +1,85 @@
+  @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+  .header {
+      max-width: 1280px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin: auto;
+  }
+
+  .bar {
+      display: flex;
+      gap: 20px;
+      font-size: 20px;
+      font-weight: 400;
+  }
+
+  .bar a {
+      color: black;
+      text-decoration: none;
+      font-family: "Roboto", sans-serif;
+  }
+
+  .bar .service a {
+      color: #F9612B;
+      font-family: "Roboto", sans-serif;
+
+  }
+
+  .phone {
+      display: flex;
+      align-items: center;
+  }
+
+  .phone p {
+      margin: 0px 20px 0px 20px;
+      font-size: 20px;
+      font-weight: 600;
+      font-family: "Roboto", sans-serif;
+  }
+
+  .phone button {
+      background-color: #F9612B;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      font-family: "Roboto", sans-serif;
+  }
+
+  .call {
+      display: none;
+  }
+
+  @media screen and (max-width: 1080px) {
+      .header {
+          align-items: center;
+          margin: 20px 10px;
+      }
+
+      .bar {
+          display: none;
+      }
+
+      .phone {
+          display: flex;
+          align-items: center;
+          margin-left: auto;
+      }
+
+      .phone button {
+          display: none;
+      }
+
+      .call {
+          display: block;
+      }
+  }
+
+  @media screen and (max-width: 720px) {
+
+      .phone {
+          display: none;
+      }
+  }
