@@ -85,10 +85,7 @@
      flex-direction: column;
  }
 
- .container:last-child {
-     min-height: 250px;
-     flex-basis: 100%;
- }
+
 
  .row {
      display: flex;
