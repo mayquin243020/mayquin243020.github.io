@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>test</title>
+    <style>
+        div.relative {
+            position: relative;
+            width: 50%;
+            height: 200px;
+            border: 2px solid #73AD21;
+        }
+
+        div.box1 {
+            position: absolute;
+            top: 20px;
+            left: 80px;
+            width: 120px;
+            border: 2px solid red;
+        }
+
+        div.box2 {
+            position: absolute;
+            top: 20px;
+            right: 80px;
+            width: 120px;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="relative">
+        <div class="box1">
+            This div element has position: relative;
+            <div class="box2">
+                This div element has position: relative;
+            </div>
+        </div>
+
+    </div>
+
+</body>
+
+</html>
