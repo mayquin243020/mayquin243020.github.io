@@ -19,15 +19,12 @@
             background-color: blue;
         }
 
-
         .container {
             display: flex;
             justify-content: center;
             align-items: center;
             padding: 120px 20px;
-
         }
-
 
         .image-box {
             position: relative;
@@ -53,7 +50,6 @@
             box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
         }
 
-
         .top-card h2 {
             font-size: 32px;
             color: #222;
@@ -67,12 +63,10 @@
             gap: 10px;
         }
 
-
         .percentage h2 {
             font-size: 32px;
             color: #222;
         }
-
 
         .arrow-icon {
             width: 28px;
@@ -144,6 +138,52 @@
             font-size: 14px;
             color: #111;
             font-family: "Geomini", sans-serif;
+
+        }
+
+        @media (max-width: 1080px) {
+            .container {
+                padding: 100px 20px;
+            }
+
+
+            .image-box {
+                width: 500px;
+            }
+
+
+            .top-card {
+                right: -60px;
+            }
+
+
+            .bottom-card {
+                left: -50px;
+            }
+
+        }
+
+        @media (max-width:500px) {
+
+            .container {
+                padding: 80px 20px;
+            }
+
+
+            .image-box {
+                width: 90%;
+            }
+
+
+            .top-card {
+                right: -40px;
+            }
+
+
+            .bottom-card {
+                left: -30px;
+                top: 260px;
+            }
 
         }
     </style>
