@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+:root {
+    --font-heading: "Kumbh Sans", sans-serif;
+    --font-base: "Mulish", sans-serif;
+    --white: #ffff;
+    --slateblue: #4F578D;
+    --darkbluegray: #1F2937;
+    --rosepink: #F73760;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.header {
+    max-width: 1440px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 40px;
+    font-family: "Kumbh Sans", sans-serif;
+
+}
+
+
+/*Logo*/
+.logo img {
+    width: 180px;
+    display: block;
+}
+
+/*Menu*/
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 44px;
+    flex: 1;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #1d2340;
+    font-family: "Kumbh Sans", sans-serif;
+    font-size: 17px;
+
+
+}
+
+.has-submenu {
+    position: relative;
+}
+
+.has-submenu>a {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.arrow {
+    width: 12px;
+    height: auto;
+    display: block;
+    width: 10px;
+    margin-top: 2px;
+}
+
+.submenu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 250px;
+    background: #5e64a8;
+    border-radius: 0 0 0 20px;
+    overflow: hidden;
+    opacity: 0;
+    pointer-events: none;
+    transition: .3s;
+}
+
+.submenu a {
+    display: block;
+    padding: 18px 20px;
+    color: white;
+}
+
+.project-submenu {
+    opacity: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background: #6769b8;
+    border-radius: 0 0 0 20px;
+    pointer-events: none;
+    transition: .3s;
+    margin-top: 8px;
+    width: 400px;
+
+}
+
+.project-item a {
+    display: block;
+    padding: 18px 20px;
+    color: white;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.has-submenu:hover>.submenu {
+    opacity: 1;
+    pointer-events: auto;
+}
+
+.has-submenu:hover>.project-submenu {
+    opacity: 1;
+    pointer-events: auto;
+}
