@@ -1,0 +1,49 @@
+.contact-info {
+    max-width: 1440px;
+    margin: 80px auto;
+    padding: 0 40px;
+
+    display: flex;
+    justify-content: center;
+    gap: 28px;
+}
+
+.card {
+    width: 384px;
+    height: 427px;
+    background: var(--whitebox);
+    border-radius: 10px;
+    overflow: hidden;
+    margin-left: 26.35px;
+    margin-right: 26.35px;
+}
+
+.card-image {
+    position: relative;
+}
+
+.card-image img {
+    width: 384px;
+    height: 294px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-image h5 {
+    position: absolute;
+    left: 18px;
+    bottom: 18px;
+    color: var(--white);
+    padding: 160px 0px 20px 40px;
+}
+
+.card-content {
+    padding: 18px 20px;
+}
+
+.smalltext {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+    padding: 30px;
+}
