@@ -171,7 +171,7 @@ p.extrablod {
     display: block;
     padding: 18px 20px;
     color: var(--white);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    border-bottom: 1px solid var(--textcolor)(255, 255, 255, 0.15);
 }
 
 .has-submenu:hover>.submenu {
@@ -224,4 +224,5 @@ p.extrablod {
 
 .hero-overlay h2 {
     margin-bottom: 10px;
+    align-items: left;
 }
