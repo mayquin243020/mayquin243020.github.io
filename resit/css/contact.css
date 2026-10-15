@@ -1,0 +1,83 @@
+
+
+.contact-hero {
+    margin: 0 24px 150px;
+}
+
+
+.contact-hero img {
+    width: 94%;
+    display: block;
+    margin: 0 auto;
+    object-fit: cover;
+}
+
+
+
+.general {
+    padding: 0px 115.400px 0px;
+}
+
+
+.general-list {
+     display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+}
+
+
+.general-item {
+    padding: 20px 0px;
+}
+
+.general-item > .tittle:first-child {
+    color: var(--text-light);
+    margin: 13px 0px;
+}
+
+.contact-large {
+    color: var(--text-dark);
+    margin-bottom: 150px;
+}
+
+.general > .contact-large {
+    margin-bottom: 30px;
+}
+
+.contact-email {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.tittle {
+
+    text-decoration: none;
+}
+
+.socials-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+}
+
+.socials-links a {
+    color: var(--text-dark);
+    text-decoration: none;
+}
+
+
+.social-list {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
+}
+
+
+
+
+
+.contact-message {
+       padding: 150px 115.400px 0;
+}
+
