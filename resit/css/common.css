@@ -258,8 +258,8 @@ body {
 }
 
 
-      .line {
-    margin:78px 0px 0px;
+    .line {
+    margin:78px 50px ;
     height: 1px;
     background-color:var(--black);
       }
@@ -355,6 +355,7 @@ body {
 
         .footer .central-bigtext {
            color:var( --footer-element);
+              font-size: 190px;
         }
 
         .footer-about {
@@ -420,9 +421,6 @@ body {
         margin-left: auto;
         background: transparent;
         border: none;
-        cursor: pointer;
-        position: relative;
-        z-index: 1002;
     }
 
     /* Three lines */
@@ -494,6 +492,10 @@ body {
         top: 24px;
         right: 40px;
     }
+
+    .footer .central-bigtext {
+        font-size: 110px;
+    }
 }
 
   
@@ -506,9 +508,10 @@ body {
 
     .footer .central-bigtext {
         margin-left: 0;
+        font-size: 70px;
     }
 
-    /* Logo and description */
+ 
     .footer-about {
         flex: 0 0 100%;
     }
@@ -517,18 +520,18 @@ body {
         width: 150px;
     }
 
-    /* Office takes one row */
+
     .footer-column {
         flex: 0 0 100%;
     }
 
-    /* Links and Follow Us side by side */
+
     .footer-column:nth-of-type(3),
     .footer-column:nth-of-type(4) {
         flex: 1 1 40%;
     }
 
-    /* Large Elementra text */
+   
     .footer-elementra {
         width: 100%;
         font-size: 60px;
@@ -538,9 +541,11 @@ body {
     }
 }
 
-@media (max-width: 480px) {
-
-    .footer {
+@media (max-width: 500px) {
+    .footer .central-bigtext {
+        font-size: 60px;
+    }
+     .footer {
         padding: 35px 20px 20px;
         gap: 25px 15px;
     }

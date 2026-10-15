@@ -9,7 +9,9 @@
             max-width: 900px;
             margin: 0 auto 35px;
         }
-
+  .text-body{
+    color:var(  --text-light);
+  }
         .tour-list {
             max-width: 1200px;
             margin: 0 auto;
@@ -105,9 +107,7 @@ margin-bottom: 25px;
 
 
 .cta-section {
-    width: 100%;
-    min-height: 360px;
-    background-image: linear-gradient(rgba(0, 0, 0, 0.35), rgba(0, 0, 0, 0.35)), url("../images/tour1.jpg");
+    background-image:  url("../images/travel\ banner.jpg");
     background-size: cover;
     background-position: center;
     display: flex;

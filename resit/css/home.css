@@ -63,11 +63,14 @@
 }
 
 .gems > .text-small,
-.gems > .heading-large,
+.gems > .heading-large {
+    text-align: center;
+
+}
 .locations > .central-bigtext {
     text-align: center;
+    margin: 100px 0;
 }
-
 .gem-list {
     display: flex;
     gap: 24px;
@@ -154,8 +157,7 @@
 }
 
 .location-images img {
-    width: 25%;
-    object-fit: cover;
+      width: 24%;
 }
 
         .numbers {
@@ -176,19 +178,6 @@
             line-height: 1.4;
         }
 
-        @media (max-width: 600px) {
-            .numbers {
-                flex-wrap: wrap;
-                gap: 20px 12px;
-            }
-
-            .number-item {
-                flex: 1 1 calc(50% - 12px);
-            }
-        }
-
-
-  
 
 
         .memories {
@@ -214,42 +203,54 @@
             position: absolute;
             left: 70px;
             bottom: 60px;
-            color: white;
+            color: var(--white);
             width: 50%;
         }
 
        
 
-        .adventure {
-            padding: 100px 70px 0;
-        }
+.adventure {
+    padding: 100px 70px ;
+}
 
-        .adventure-top {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-        }
-  .text-body{
-            color:var(--text-light)
-        }
-       
-        .adventure-images {
-            display: grid;
-            grid-template-columns: repeat(4, minmax(0, 1fr));
-            gap: 20px;
-            margin-top: 42px;
-        }
+.adventure-top {
+    display: flex;
+    gap: 60px;
+}
 
-        .adventure-images img {
-            width: 100%;
-            height: 300px;
-            object-fit: cover;
-        }
+.adventure-text {
+    width: 50%;
+}
 
-        .adventure-images img:first-child {
-            height: 300px;
-        }
+.adventure-image-right {
+    width: 50%;
+}
 
+.adventure-image-right img {
+    width: 80%;
+    object-fit: cover;
+}
+
+.text-body {
+    color: var(--text-light);
+}
+.adventure-image-bottom {
+    display: flex;
+       gap: 180px;
+    margin-top: 30px;
+    align-items: center;
+}
+
+.adventure-image-bottom img {
+    width: 40%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.adventure-image-bottom .text-body {
+    width: 35%;
+    color: var(--text-light);
+}
 
         .blog {
             padding: 100px 70px;
@@ -277,36 +278,41 @@
             display: block;
             object-fit: cover;
         }
+.blog-textbox{
+    margin: 20px 0;
+}
 
-        .ordinary {
-            padding: 100px 70px 0;
-        }
+.ordinary {
+    width: 100%;
+    padding: 100px 70px;
+    box-sizing: border-box;
 
-        .ordinary-top {
-            display: grid;
-            grid-template-columns: 0.9fr 1.1fr;
-            align-items: center;
-            gap: 60px;
-        }
+    background-image: url("../images/explorebanner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
 
-        .ordinary-image img {
-            width: 100%;
-            height: 600px;
-            display: block;
-            object-fit: cover;
-        }
+.ordinary-top {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    min-height: 600px;
+}
 
-        .ordinary-content {
-                        min-height: 540px;
-                        padding: 55px 40px;
-            background-color: var(--white);
-        }
+.ordinary-content {
+    width: 45%;
+    min-height: 540px;
+    padding: 55px 40px;
+    box-sizing: border-box;
+    background-color: var(--white);
+}
 
-        .ordinary-content .contact-large,
-        .ordinary-content .text-body,
-        .ordinary-content .text-label {
-            color: var(--text-dark);
-        }
+.ordinary-content .contact-large,
+.ordinary-content .text-body,
+.ordinary-content .text-label {
+    color: var(--text-dark);
+}
 
        
 
