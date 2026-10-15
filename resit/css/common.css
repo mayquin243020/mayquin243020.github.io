@@ -460,10 +460,8 @@ body {
         display: none;
         position: fixed;
         top: 0;
-        left: 0;
-        width: 100%;
+        right: 0;
         height: 100%;
-        box-sizing: border-box;
         padding: 100px  50px;
         background-color:var(--hamburger-menu);
         flex-direction: column;
@@ -507,7 +505,12 @@ body {
 
   
 @media (max-width: 766px) {
-
+   .navigation {
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    
     .footer {
         padding: 40px 22px 25px;
         gap: 30px 20px;
