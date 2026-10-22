@@ -195,17 +195,32 @@
 
         .memories-overlay {
             position: absolute;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.28);
         }
 
-        .memories-content {
-            position: absolute;
-            left: 70px;
-            bottom: 60px;
-            color: var(--white);
-            width: 50%;
-        }
+.memories-content {
+    position: absolute;
+    left: 70px;
+    right: 70px;
+    bottom: 60px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+
+    color: var(--white);
+}
+
+.main-button {
+    border: 1px solid var(--white);
+    color: var(--white);
+    transition: 0.3s;
+}
+
+.main-button:hover {
+    background-color: var(--background-cream);
+    color: var(--text-dark);
+}
 
        
 
@@ -243,7 +258,6 @@
 
 .adventure-image-bottom img {
     width: 40%;
-    height: 300px;
     object-fit: cover;
 }
 
@@ -286,7 +300,6 @@
     width: 100%;
     padding: 100px 70px;
     box-sizing: border-box;
-
     background-image: url("../images/explorebanner.jpg");
     background-size: cover;
     background-position: center;
@@ -301,28 +314,43 @@
 }
 
 .ordinary-content {
-    width: 45%;
+    width: 30%;
     min-height: 540px;
     padding: 55px 40px;
     box-sizing: border-box;
     background-color: var(--white);
+
+    display: flex;
+    flex-direction: column;
 }
 
 .ordinary-content .contact-large,
-.ordinary-content .text-body,
 .ordinary-content .text-label {
     color: var(--text-dark);
 }
 
-       
+.ordinary-content .text-body {
+    padding: 20px 0;
+}
 
-        .review {
-            padding: 90px 24px 80px;
-            text-align: center;
-            background-color: var(--white);
-        }
+.ordinary-content .text-label {
+    margin-top: auto;
+    align-self: flex-start;
+}
 
-        .review-container {
+.explore{
+     background-color:var(--white);
+}
+.explorehidden{
+    text-align: center;
+}
+
+.review {
+    background-color:var(--white);
+    padding: 100px;
+}
+
+.review-container {
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
@@ -331,28 +359,78 @@
 
 .review-track {
     display: flex;
-    transition: transform 0.7s ease;
+    width: 100%;
+    transition: transform 0.5s ease;
 }
-        .review .introduction {
-            max-width: 720px;
-            margin: 0 auto;
-        }
 
-        .review img {
-            display: block;
-            width: 5%;
-            margin: 24px auto 0;
-            border-radius: 50%;
-            object-fit: cover;
-        }
+.review-track > .review {
+ background-color:var(--white);
+    width: 100%;
+    min-width: 100%;
+    flex-shrink: 0;
+    box-sizing: border-box;
+    padding: 40px 24px;
+    text-align: center;
+}
+
+.review-container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    overflow: hidden;
+}
 
 
-        .review-dots {
-            color: #aaa;
-            font-size: 14px;
-            margin-top: 32px;
-            letter-spacing: 6px;
-        }
+.review-track {
+    display: flex;
+    width: 100%;
+    transition: transform 0.5s ease;
+    touch-action: pan-y;
+}
+
+.review-track > .review {
+    background-color: var(--white);
+    width: 100%;
+    min-width: 100%;
+    flex: 0 0 100%;
+    box-sizing: border-box;
+    padding: 40px 24px;
+    text-align: center;
+}
+
+.review-track .introduction {
+    width: 100%;
+    max-width: 720px;
+    margin: 0 auto;
+}
+
+.review-track img {
+    display: block;
+    width: 60px;
+    height: 60px;
+    margin: 24px auto 12px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-dots {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.review-dots span {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 5px;
+    background-color: #aaa;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.review-dots span.active {
+    background-color: var(--orange);
+}
 
         .text-description{
             color:  var(--position);
@@ -384,3 +462,6 @@
             object-fit: cover;
             border-radius: 0%;
         }
+
+
+    
