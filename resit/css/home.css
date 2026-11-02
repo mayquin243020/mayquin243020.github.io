@@ -14,12 +14,6 @@
     margin-bottom: 4px;
     font-size: 76px;
 }
-
-.hero-heading .home-tittle {
-    font-size: 150px;
-    line-height: 0.95;
-}
-
 .hero-content {
     display: flex;
     gap: 36px;
@@ -462,6 +456,380 @@
             object-fit: cover;
             border-radius: 0%;
         }
+.hidden-marquee {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+.hidden-marquee .explorehidden {
+    display: inline-block;
+    white-space: nowrap;
+}
+        
 
 
+@media screen and (max-width: 1280px) {
     
+    .gems {
+        padding: 60px 45px;
+    }
+
+    .gem-list {
+        gap: 18px;
+    }
+
+    .gem {
+        padding: 35px 20px;
+    }
+
+    .locations {
+        padding: 80px 45px 0;
+    }
+
+    .location-top {
+        gap: 35px;
+    }
+
+    .location-images {
+        gap: 15px;
+    }
+
+    .memories {
+        height: 540px;
+    }
+
+    .memories-content {
+        left: 45px;
+        right: 45px;
+        bottom: 45px;
+    }
+
+    .adventure {
+        padding: 80px 45px;
+    }
+
+    .adventure-top {
+        gap: 40px;
+    }
+
+    .adventure-image-bottom {
+        gap: 80px;
+    }
+
+    .blog {
+        padding: 80px 45px;
+    }
+
+    .ordinary {
+        padding: 80px 45px;
+    }
+
+    .ordinary-content {
+        width: 40%;
+    }
+
+    .review {
+        padding: 80px 45px;
+    }
+
+    .mini-gallery {
+        margin: 0 45px;
+        padding: 100px 0;
+        gap: 25px;
+    }
+
+    .mini-gallery-images {
+        gap: 20px;
+    }
+}
+
+@media screen and (max-width: 766px) {
+
+    .hero {
+        padding: 40px 30px 50px;
+    }
+
+    .hero-heading {
+        margin-bottom: 30px;
+    }
+
+    .hero-heading .home-explore {
+        font-size: 55px;
+    }
+
+  
+
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 25px;
+    }
+
+    .hero-text {
+        width: 100%;
+        padding-bottom: 0;
+    }
+
+.hero-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+}
+
+.hero-image img,
+.hero-image img:last-child {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+    .hero-image img,
+    .hero-image img:last-child {
+        width: 50%;
+        height: 220px;
+        object-fit: cover;
+    }
+
+
+.gem-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 20px;
+}
+
+.gem-list .gem {
+    width: 100%;
+    flex: none;
+    box-sizing: border-box;
+    padding: 25px 20px;
+}
+
+.gem-list .gem img {
+    width: 70%;
+}
+
+.gem-list .gem-info {
+    width: 100%;
+}
+
+
+    .locations {
+        padding: 60px 30px 0;
+        overflow: hidden;
+    }
+
+    .locations > .central-bigtext {
+        margin: 50px 0;
+    }
+
+    .location-top {
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .location-top > div {
+        width: 100%;
+    }
+
+    .location-top .text-small {
+        white-space: nowrap;
+    }
+
+    .location-top .introduction {
+        line-height: 1.6;
+    }
+
+    .location-images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 15px 0;
+        margin-top: 30px;
+    }
+
+    .location-images img {
+        width: 48%;
+        height: 230px;
+        object-fit: cover;
+    }
+
+    .location-images img:nth-child(even) {
+        margin-top: 25px;
+    }
+
+    .numbers {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 25px 0;
+        margin: 45px 0 60px;
+        text-align: center;
+    }
+
+    .number-item {
+        width: 48%;
+        flex: none;
+    }
+
+    .number-item .introduction {
+        margin-top: 4px;
+    }
+
+
+    /* MEMORIES */
+    .memories {
+        height: 450px;
+    }
+
+    .memories-content {
+        left: 30px;
+        right: 30px;
+        bottom: 35px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+    }
+
+
+    /* ADVENTURE */
+    .adventure {
+        padding: 60px 30px;
+        display: flex;
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .adventure-top,
+    .adventure-text,
+    .adventure-image-bottom {
+        display: contents;
+    }
+
+    .adventure-text .text-small {
+        order: 1;
+    }
+
+    .adventure-text .heading-large {
+        order: 2;
+    }
+
+    .adventure-text > .text-body {
+        order: 3;
+    }
+
+    .adventure-image-bottom img {
+        order: 4;
+        width: 100%;
+    }
+
+    .adventure-image-right {
+        order: 5;
+        width: 100%;
+    }
+
+    .adventure-image-right img {
+        width: 100%;
+    }
+
+    .adventure-image-bottom .text-body {
+        order: 6;
+        width: 100%;
+    }
+
+    .blog {
+        padding: 60px 30px;
+    }
+
+    .blog-heading {
+        margin-bottom: 25px;
+    }
+
+    .blog-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    .blog-card {
+        width: 100%;
+        min-width: 0;
+    }
+
+    .blog-card img {
+        width: 100%;
+        height: 260px;
+        object-fit: cover;
+    }
+
+    .blog-textbox {
+        margin: 15px 0;
+    }
+
+    .ordinary {
+        padding: 60px 30px;
+    }
+
+    .ordinary-top {
+        min-height: 440px;
+    }
+
+.ordinary-content {
+    width: 65%;
+    min-height: 400px;
+    padding: 35px 25px;
+    margin: 0 auto;
+}
+ .explorehidden {
+        white-space: nowrap;
+        text-align: center;
+    }
+
+
+    .explorehidden {
+        text-align: center;
+    }
+
+
+  
+    .review {
+        padding: 60px 30px;
+    }
+
+    .review-track > .review {
+        padding: 30px 15px;
+    }
+
+    .mini-gallery {
+        margin: 0 30px;
+        padding: 70px 0;
+        gap: 22px;
+    }
+
+    .mini-gallery .text-small {
+        text-align: center;
+        white-space: normal;
+        line-height: 1.5;
+        max-width: 250px;
+        margin: 0 auto;
+    }
+
+.mini-gallery-images {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px 0;
+}
+
+.mini-gallery-images img {
+    width: 48%;
+    height: 180px;
+    object-fit: cover;
+}
+
+}
