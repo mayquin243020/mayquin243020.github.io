@@ -335,9 +335,6 @@
 .explore{
      background-color:var(--white);
 }
-.explorehidden{
-    text-align: center;
-}
 
 .review {
     background-color:var(--white);
@@ -456,18 +453,6 @@
             object-fit: cover;
             border-radius: 0%;
         }
-.hidden-marquee {
-    width: 100%;
-    overflow: hidden;
-    white-space: nowrap;
-}
-
-.hidden-marquee .explorehidden {
-    display: inline-block;
-    white-space: nowrap;
-}
-        
-
 
 @media screen and (max-width: 1280px) {
     
@@ -542,6 +527,7 @@
     .mini-gallery-images {
         gap: 20px;
     }
+  
 }
 
 @media screen and (max-width: 766px) {
@@ -592,6 +578,7 @@
         height: 220px;
         object-fit: cover;
     }
+
 
 
 .gem-list {
@@ -785,16 +772,7 @@
     padding: 35px 25px;
     margin: 0 auto;
 }
- .explorehidden {
-        white-space: nowrap;
-        text-align: center;
-    }
-
-
-    .explorehidden {
-        text-align: center;
-    }
-
+ 
 
   
     .review {
@@ -832,4 +810,7 @@
     object-fit: cover;
 }
 
+}
+
+@media screen and (max-width: 500px) {
 }
