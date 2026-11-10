@@ -58,6 +58,15 @@ body {
     margin-left: -40px;
 }
 
+.bigtext{
+    font-family: var(--font-heading);
+    font-size:190px;
+    font-weight: 400;
+    line-height: 1;
+     margin: 70px 0px 0px;
+   color:var( --footer-element);
+}
+
 .explorehidden{
      font-family: var(--font-heading);
     font-size:100px;
@@ -362,11 +371,10 @@ body {
             background-color: var(--footer-bg);
         }
 
-        .footer .central-bigtext {
-           color:var( --footer-element);
-              font-size: 190px;
-        }
-
+       
+.footer .bigtext {
+    margin-left: 0;
+}
         .footer-about {
             flex: 1.5 1 240px;
         }
@@ -517,7 +525,7 @@ font-size:clamp(70px, 10vw, 140px)
         right: 40px;
     }
 
-    .footer .central-bigtext {
+    .footer .bigtext {
         font-size: 110px;
     }
     .central-bigtext{
@@ -638,7 +646,7 @@ font-size:clamp(70px, 10vw, 140px)
     margin:65px 20px ;
       }
 
-    .footer .central-bigtext {
+    .footer .bigtext {
         font-size: 60px;
     }
      .footer {
