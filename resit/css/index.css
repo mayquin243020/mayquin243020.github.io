@@ -44,7 +44,6 @@
 }
 
 .hero-image img {
-    display: block;
     width: 50%;
     object-fit: cover;
 }
@@ -130,9 +129,9 @@
     color: var(--white);
 }
 
-    .locations {
-    padding: 100px 70px 0;
-    overflow: hidden;
+.locations {
+    padding:0px 70px 0;
+
 }
 
 .location-top {
@@ -154,40 +153,37 @@
       width: 24%;
 }
 
-        .numbers {
-            display: flex;
-            justify-content: space-around;
-            gap: 24px;
-            margin: 32px 0 60px;
-            text-align: center;
-        }
+.numbers {
+display: flex;
+justify-content: space-around;
+gap: 24px;
+margin: 32px 0 60px;
+text-align: center;
+}
 
-        .number-item {
-            flex: 1;
-        }
+.number-item {
+flex: 1;
+}
 
-        .number-item .introduction {
-            margin-top: 4px;
-            font-size: 14px;
-            line-height: 1.4;
-        }
+.number-item .introduction {
+margin-top: 4px;
+font-size: 14px;
+line-height: 1.4;
+}
 
 
 
-        .memories {
-            position: relative;
-            height: 620px;
-            overflow: hidden;
-        }
+.memories {
+position: relative;
+height: 70%;
+overflow: hidden;
+background-image: url("../images/banner.jpg");
+background-size: cover;
+background-position: center;
+background-repeat: no-repeat;
+}
 
-        .memories img {
-            width: 100%;
-            height: 100%;
-            display: block;
-            object-fit: cover;
-        }
-
-        .memories-overlay {
+.memories-overlay {
             position: absolute;
         }
 
@@ -196,12 +192,10 @@
     left: 70px;
     right: 70px;
     bottom: 60px;
-
     display: flex;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
-
     color: var(--white);
 }
 
@@ -260,32 +254,32 @@
     color: var(--text-light);
 }
 
-        .blog {
-            padding: 100px 70px;
+.blog {
+     padding: 100px 70px;
             background-color:var(--white);
-        }
+}
 
-        .blog-heading {
-            margin-bottom: 36px;
-        }
+.blog-heading {
+    margin-bottom: 36px;
+}
 
-        
-        .blog-grid {
-           display: flex;
+ .blog-grid {
+     display: flex;
             gap: 24px;
-        }
+}
 
-        .blog-card {
-            position: relative;
-            flex: 1;
-            min-width: 0;
-        }
+.blog-card {
+    position: relative;
+     flex: 1;
+    min-width: 0;
+    }
 
-        .blog-card img {
-            width: 100%;
-            display: block;
-            object-fit: cover;
-        }
+.blog-card img {
+    width: 100%;
+    display: block;
+    object-fit: cover;
+    }
+
 .blog-textbox{
     margin: 20px 0;
 }
@@ -329,7 +323,6 @@
 
 .ordinary-content .text-label {
     margin-top: auto;
-    align-self: flex-start;
 }
 
 .explore{
@@ -423,52 +416,52 @@
     background-color: var(--orange);
 }
 
-        .text-description{
-            color:  var(--position);
+.text-description{
+    color:  var(--position);
         }
 
 
-        .mini-gallery {
-            display: flex;
-            flex-direction: column;
-            gap: 16px;
-               margin:0px 115.4px;
-            padding:150px 0px;
+.mini-gallery {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin:0px 115.4px;
+    padding:150px 0px;
+    }
+
+.mini-gallery .text-small {
+    text-align: center;
         }
 
-        .mini-gallery .text-small {
-            text-align: center;
-        }
-
-        .mini-gallery-images {
-            display: flex;
-            flex-wrap: nowrap;
-            justify-content: center;
+.mini-gallery-images {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
      gap: 35px;
-            min-width: 0;
-        }
+     min-width: 0;
+    }
 
-        .mini-gallery img {
-            width: 15%;
-            object-fit: cover;
-            border-radius: 0%;
-        }
+ .mini-gallery img {
+    width: 15%;
+    object-fit: cover;
+    border-radius: 0%;
+    }
 
 @media screen and (max-width: 1280px) {
     
-    .gems {
+.gems {
         padding: 60px 45px;
     }
 
-    .gem-list {
+.gem-list {
         gap: 18px;
     }
 
-    .gem {
+.gem {
         padding: 35px 20px;
     }
 
-    .locations {
+.locations {
         padding: 80px 45px 0;
     }
 
@@ -481,7 +474,7 @@
     }
 
     .memories {
-        height: 540px;
+        height: 60%;
     }
 
     .memories-content {
@@ -667,7 +660,7 @@
 
     /* MEMORIES */
     .memories {
-        height: 450px;
+        height: 50%;
     }
 
     .memories-content {

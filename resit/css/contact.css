@@ -7,7 +7,6 @@
 
 .contact-hero img {
     width: 94%;
-    display: block;
     margin: 0 auto;
     object-fit: cover;
 }
@@ -142,9 +141,6 @@
         margin: 0 14px 50px;
     }
 
-    .contact-hero img {
-        width: 100%;
-    }
 
     .general {
         padding: 0 18px;
