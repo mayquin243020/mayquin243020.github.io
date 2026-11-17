@@ -54,8 +54,7 @@
 }
 
 .tour-info > a:last-child {
-    margin-top: auto;
-    align-self: flex-start;
+      margin-top: 340px;
 }
 
 .arrow {

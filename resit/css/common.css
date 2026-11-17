@@ -538,7 +538,7 @@ font-size:clamp(70px, 10vw, 140px)
     }
 
     .footer .bigtext {
-        font-size: 110px;
+        font-size: clamp(60px, 7vw, 90px);
     }
     .central-bigtext{
     font-size:160px;
@@ -678,5 +678,4 @@ font-size:clamp(70px, 10vw, 140px)
     font-size:71px;
 }
 }
-
 

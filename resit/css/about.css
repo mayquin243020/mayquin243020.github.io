@@ -203,11 +203,12 @@
 }
 
 .explore-images {
-    justify-content: center;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
     align-items: center;
-    gap: 90px;
+    gap: clamp(10px, 3vw, 35px);
     margin-top: 55px;
-    flex-wrap: wrap;
 }
 
 .explore-images img {
@@ -400,20 +401,11 @@
 
     .explore-images {
         display: flex;
+        flex-wrap: nowrap;
         justify-content: center;
         align-items: center;
-        gap: 35px;
         margin-top: 45px;
     }
-
-    .explore-images img {
-        width: 20%;
-        height: 220px;
-        object-fit: cover;
-    }
-
-
-
 
     .join {
         padding: 80px 50px 90px;

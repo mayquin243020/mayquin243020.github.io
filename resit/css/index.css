@@ -1,3 +1,4 @@
+
 .hero {
     max-width: 1600px;
     margin: 0 auto;
@@ -14,10 +15,18 @@
     margin-bottom: 4px;
     font-size: 76px;
 }
+
 .hero-content {
+    position: relative;
     display: flex;
     gap: 36px;
     align-items: flex-end;
+}
+
+.hero-mountain {
+    position: absolute;
+    right: -70px;
+    bottom: 300px;
 }
 
 .hero-text {
@@ -28,12 +37,12 @@
 .hero .main-button {
     color: var(--text-dark);
     border: 1px solid var(--text-dark);
-        padding: 18px 44px;
+    padding: 18px 44px;
 }
 
 .hero .main-button:hover {
-    background-color: var( --text-dark);
-    color:var( --background-cream);
+    background-color: var(--text-dark);
+    color: var(--background-cream);
 }
 
 .hero-image {
@@ -51,19 +60,21 @@
 .hero-image img:last-child {
     width: 40%;
 }
+
 .gems {
-    padding:0px  70px;
+    padding: 0px 70px;
 }
 
 .gems > .text-small,
 .gems > .heading-large {
     text-align: center;
-
 }
+
 .locations > .central-bigtext {
     text-align: center;
     margin: 100px 0;
 }
+
 .gem-list {
     display: flex;
     gap: 24px;
@@ -130,8 +141,7 @@
 }
 
 .locations {
-    padding:0px 70px 0;
-
+    padding: 0px 70px 0;
 }
 
 .location-top {
@@ -143,6 +153,10 @@
     width: 50%;
 }
 
+.location-arrow {
+    margin-bottom: 16px;
+}
+
 .location-images {
     display: flex;
     gap: 20px;
@@ -150,42 +164,45 @@
 }
 
 .location-images img {
-      width: 24%;
+    width: 24%;
+}
+.location-images img:nth-child(2),
+.location-images img:nth-child(4) {
+    position: relative;
+    top: 25px;
 }
 
 .numbers {
-display: flex;
-justify-content: space-around;
-gap: 24px;
-margin: 32px 0 60px;
-text-align: center;
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+    margin: 32px 0 60px;
+    text-align: center;
 }
 
 .number-item {
-flex: 1;
+    flex: 1;
 }
 
 .number-item .introduction {
-margin-top: 4px;
-font-size: 14px;
-line-height: 1.4;
+    margin-top: 4px;
+    font-size: 14px;
+    line-height: 1.4;
 }
 
-
-
 .memories {
-position: relative;
-height: 70%;
-overflow: hidden;
-background-image: url("../images/banner.jpg");
-background-size: cover;
-background-position: center;
-background-repeat: no-repeat;
+    position: relative;
+    height: 70%;
+    overflow: hidden;
+    background-image: url("../images/banner.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .memories-overlay {
-            position: absolute;
-        }
+    position: absolute;
+}
 
 .memories-content {
     position: absolute;
@@ -199,90 +216,92 @@ background-repeat: no-repeat;
     color: var(--white);
 }
 
-.main-button {
-    border: 1px solid var(--white);
-    color: var(--white);
-    transition: 0.3s;
-}
-
-.main-button:hover {
-    background-color: var(--background-cream);
-    color: var(--text-dark);
-}
-
-       
 
 .adventure {
-    padding: 100px 70px ;
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 100px 70px;
+    box-sizing: border-box;
 }
 
 .adventure-top {
     display: flex;
-    gap: 60px;
+    gap: 4%;
+    align-items: flex-start;
 }
 
 .adventure-text {
-    width: 50%;
+    width: 48%;
 }
 
 .adventure-image-right {
-    width: 50%;
+    width: 48%;
 }
 
 .adventure-image-right img {
-    width: 80%;
+    width: 100%;
     object-fit: cover;
+    display: block;
+}
+
+.adventure-text .text-body {
+    margin-top: 25px;
 }
 
 .text-body {
     color: var(--text-light);
 }
+
 .adventure-image-bottom {
     display: flex;
-       gap: 180px;
-    margin-top: 30px;
+    gap: 4%;
+    margin-top: 40px;
     align-items: center;
 }
 
 .adventure-image-bottom img {
-    width: 40%;
+    width: 48%;
     object-fit: cover;
+    display: block;
 }
 
 .adventure-image-bottom .text-body {
-    width: 35%;
+    width: 48%;
     color: var(--text-light);
 }
 
+
 .blog {
-     padding: 100px 70px;
-            background-color:var(--white);
+    padding: 100px 70px;
+    background-color: var(--white);
 }
 
 .blog-heading {
     margin-bottom: 36px;
 }
 
- .blog-grid {
-     display: flex;
-            gap: 24px;
+.blog-grid {
+    display: flex;
+    gap: 24px;
 }
 
 .blog-card {
     position: relative;
-     flex: 1;
+    flex: 1;
     min-width: 0;
-    }
+}
 
 .blog-card img {
     width: 100%;
     display: block;
     object-fit: cover;
-    }
+}
 
-.blog-textbox{
+.blog-textbox {
     margin: 20px 0;
 }
+
+
 
 .ordinary {
     width: 100%;
@@ -303,13 +322,8 @@ background-repeat: no-repeat;
 
 .ordinary-content {
     width: 30%;
-    min-height: 540px;
     padding: 55px 40px;
-    box-sizing: border-box;
     background-color: var(--white);
-
-    display: flex;
-    flex-direction: column;
 }
 
 .ordinary-content .contact-large,
@@ -322,7 +336,7 @@ background-repeat: no-repeat;
 }
 
 .ordinary-content .text-label {
-    margin-top: auto;
+    margin-top: 120px;
 }
 
 .ordinary-content .ready-link {
@@ -330,12 +344,14 @@ background-repeat: no-repeat;
     text-decoration: none;
 }
 
-.explore{
-     background-color:var(--white);
+.explore {
+    background-color: var(--white);
 }
 
+
+
 .review {
-    background-color:var(--white);
+    background-color: var(--white);
     padding: 100px;
 }
 
@@ -343,19 +359,16 @@ background-repeat: no-repeat;
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    overflow: hidden;
 }
 
-.review-track {
-    display: flex;
+.review-content {
+    display: block;
     width: 100%;
 }
 
-.review-track > .review {
- background-color:var(--white);
-    width: 100%;
-    min-width: 100%;
-    flex-shrink: 0;
+.review-content > .review {
+    background-color: var(--white);
+    width: auto;
     padding: 40px 24px;
     text-align: center;
 }
@@ -364,24 +377,15 @@ background-repeat: no-repeat;
     width: 100%;
     max-width: 900px;
     margin: 0 auto;
-    overflow: hidden;
 }
 
-
-.review-track {
-    display: flex;
-    width: 100%;
-    touch-action: pan-y;
-}
-
-
-.review-track .introduction {
+.review-content .introduction {
     width: 100%;
     max-width: 720px;
     margin: 0 auto;
 }
 
-.review-track img {
+.review-content img {
     display: block;
     width: 60px;
     height: 60px;
@@ -390,44 +394,26 @@ background-repeat: no-repeat;
     object-fit: cover;
 }
 
-.review-dots {
-    text-align: center;
-    margin-top: 30px;
+.text-description {
+    color: var(--position);
 }
 
-.review-dots span {
-    display: inline-block;
-    width: 8px;
-    height: 8px;
-    margin: 0 5px;
-    background-color: #aaa;
-    border-radius: 50%;
-    cursor: pointer;
-}
-
-.review-dots span.active {
-    background-color: var(--orange);
-}
-
-.text-description{
-    color:  var(--position);
-        }
 
 
 .mini-gallery {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    margin:0px 115.4px;
-    padding:150px 0px;
-    }
+    margin: 0px 115.4px;
+    padding: 150px 0px;
+}
 
 .mini-gallery .text-small {
     text-align: center;
 }
 
 .mini-gallery .instagram-link {
-      color: var(--text-dark);
+    color: var(--text-dark);
     text-decoration: underline;
     text-decoration-color: var(--orange);
     text-underline-offset: 4px;
@@ -437,31 +423,33 @@ background-repeat: no-repeat;
     display: flex;
     flex-wrap: nowrap;
     justify-content: center;
-     gap: 35px;
-     min-width: 0;
-    }
+    gap: 35px;
+    min-width: 0;
+}
 
- .mini-gallery img {
+.mini-gallery img {
     width: 15%;
     object-fit: cover;
     border-radius: 0%;
-    }
+}
+
+
 
 @media screen and (max-width: 1280px) {
-    
-.gems {
+
+    .gems {
         padding: 60px 45px;
     }
 
-.gem-list {
+    .gem-list {
         gap: 18px;
     }
 
-.gem {
+    .gem {
         padding: 35px 20px;
     }
 
-.locations {
+    .locations {
         padding: 80px 45px 0;
     }
 
@@ -485,14 +473,6 @@ background-repeat: no-repeat;
 
     .adventure {
         padding: 80px 45px;
-    }
-
-    .adventure-top {
-        gap: 40px;
-    }
-
-    .adventure-image-bottom {
-        gap: 80px;
     }
 
     .blog {
@@ -520,8 +500,9 @@ background-repeat: no-repeat;
     .mini-gallery-images {
         gap: 20px;
     }
-  
 }
+
+
 
 @media screen and (max-width: 766px) {
 
@@ -541,8 +522,6 @@ background-repeat: no-repeat;
         font-size: clamp(34px, 10.3vw, 78.8px);
     }
 
-  
-
     .hero-content {
         display: flex;
         flex-direction: column;
@@ -550,49 +529,53 @@ background-repeat: no-repeat;
         gap: 25px;
     }
 
+    .hero-mountain {
+        position: absolute;
+        top: 0;
+        right: -30px;
+    }
+
     .hero-text {
+        position: relative;
         width: 100%;
         padding-bottom: 0;
     }
 
-.hero-image {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    gap: 20px;
-}
+    .hero-image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        gap: 20px;
+    }
 
-.hero-image img,
-.hero-image img:last-child {
-    width: 100%;
-    height: 250px;
-    object-fit: cover;
-}
+    .hero-image img,
+    .hero-image img:last-child {
+        width: 100%;
+        object-fit: cover;
+    }
 
+    .gem-list {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        gap: 20px;
+    }
 
-.gem-list {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    gap: 20px;
-}
+    .gem-list .gem {
+        width: 100%;
+        flex: none;
+        box-sizing: border-box;
+        padding: 25px 20px;
+    }
 
-.gem-list .gem {
-    width: 100%;
-    flex: none;
-    box-sizing: border-box;
-    padding: 25px 20px;
-}
+    .gem-list .gem img {
+        width: 70%;
+    }
 
-.gem-list .gem img {
-    width: 70%;
-}
-
-.gem-list .gem-info {
-    width: 100%;
-}
-
+    .gem-list .gem-info {
+        width: 100%;
+    }
 
     .locations {
         padding: 60px 30px 0;
@@ -613,7 +596,7 @@ background-repeat: no-repeat;
         width: 100%;
     }
 
-    .location-top .text-small {
+    .location-top > .text-small {
         white-space: nowrap;
     }
 
@@ -657,8 +640,8 @@ background-repeat: no-repeat;
         margin-top: 4px;
     }
 
-
     /* MEMORIES */
+
     .memories {
         height: 50%;
     }
@@ -673,8 +656,6 @@ background-repeat: no-repeat;
         gap: 20px;
     }
 
-
-    /* ADVENTURE */
     .adventure {
         padding: 60px 30px;
         display: flex;
@@ -756,20 +737,18 @@ background-repeat: no-repeat;
         min-height: 440px;
     }
 
-.ordinary-content {
-    width: 65%;
-    min-height: 400px;
-    padding: 35px 25px;
-    margin: 0 auto;
-}
- 
+    .ordinary-content {
+        width: 65%;
+        min-height: 400px;
+        padding: 35px 25px;
+        margin: 0 auto;
+    }
 
-  
     .review {
         padding: 60px 30px;
     }
 
-    .review-track > .review {
+    .review-content > .review {
         padding: 30px 15px;
     }
 
@@ -787,20 +766,22 @@ background-repeat: no-repeat;
         margin: 0 auto;
     }
 
-.mini-gallery-images {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 10px 0;
+    .mini-gallery-images {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 10px 0;
+    }
+
+    .mini-gallery-images img {
+        width: 48%;
+        height: 180px;
+        object-fit: cover;
+    }
 }
 
-.mini-gallery-images img {
-    width: 48%;
-    height: 180px;
-    object-fit: cover;
-}
 
-}
 
 @media screen and (max-width: 500px) {
+
 }
