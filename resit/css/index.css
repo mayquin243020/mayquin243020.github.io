@@ -1,13 +1,9 @@
 
 .hero {
-    max-width: 1600px;
-    margin: 0 auto;
     padding: 54px 70px 80px;
 }
 
 .hero-heading {
-    width: 100%;
-    text-align: center;
     margin: 0 auto 42px;
 }
 
@@ -73,6 +69,7 @@
 .locations > .central-bigtext {
     text-align: center;
     margin: 100px 0;
+    font-size: clamp(42px, 12vw, 160px);
 }
 
 .gem-list {
@@ -434,7 +431,7 @@
 
 
 
-@media screen and (max-width: 1280px) {
+@media screen and (max-width: 1030px) {
 
     .gems {
         padding: 60px 45px;
@@ -499,11 +496,23 @@
     .mini-gallery-images {
         gap: 20px;
     }
+
+
+    .blog-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .blog-card {
+        width: 48%;
+        flex: none;
+    }
 }
 
 
 
-@media screen and (max-width: 766px) {
+@media screen and (max-width: 786px) {
 
     .hero {
         padding: 40px 30px 50px;
@@ -596,7 +605,7 @@
     }
 
     .location-top > .text-small {
-        white-space: nowrap;
+        white-space: normal;
     }
 
     .location-top .introduction {
@@ -774,7 +783,6 @@
 
     .mini-gallery-images img {
         width: 48%;
-        height: 180px;
         object-fit: cover;
     }
 }

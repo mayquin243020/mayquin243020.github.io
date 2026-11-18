@@ -74,7 +74,7 @@
        padding: 150px 115.400px 150px;
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1030px) {
 
     .contact-hero {
         margin: 0 24px 100px;
@@ -103,7 +103,7 @@
 }
 
 
-@media (max-width: 766px) {
+@media (max-width: 786px) {
 
     .contact-hero {
         margin: 0 18px 70px;
