@@ -174,9 +174,8 @@
 
 .numbers {
     display: flex;
-    justify-content: space-around;
     gap: 24px;
-    margin: 32px 0 60px;
+ margin: 120px 0 60px;
     text-align: center;
 }
 

@@ -13,26 +13,14 @@
     --box-red: #A8463F;
     --orange: #ED9266;
     --stars:#FF5733;
-    --travel-blue: #6366F1;
-    --travel-purple: #875CE9;
     --text-dark: #140503;
-    --text-main: #545A67;
     --text-light: #82878E;
     --position:#a7acb2;
     --white: #fffefe;
     --black: #000000;
     --background-cream: #FBFCEE;
-    --background-light-purple: #D6D6FF;
-    --background-light-blue: #BBBADE;
-    --background-grey: #F4F4F2;
     --background-light-grey: #F7F7F7;
-    --dark-blue: #2E305F;
-    --dark-grey: #2D313E;
-    --border-light: #E5E5E5;
     --border-grey: #D9D9D9;
-    --hover-blue: #5153D8;
-    --hover-purple: #7548D5;
-    --hover-orange: #E27F52;
     --bigelementra: #E7E7D9;
     --footer-text:#f6f7f8;
     --footer-bg:#472425;
@@ -380,7 +368,9 @@ img {
 
        
 .footer .bigtext {
+    flex: 0 0 100%;
     margin-left: 0;
+    text-align: center;
 }
         .footer-about {
             flex: 1.5 1 240px;
@@ -410,7 +400,7 @@ img {
         }
 
         .footer .office-contact {
-            color: inherit;
+            color: var(--footer-tex);
             text-decoration: none;
         }
 
@@ -421,7 +411,7 @@ img {
         }
 
         .footer-links a {
-            color: inherit;
+            color: var(--footer-tex);
             text-decoration: none;
         }
 
@@ -538,7 +528,7 @@ font-size:clamp(70px, 10vw, 140px)
     }
 
     .footer .bigtext {
-        font-size: clamp(60px, 7vw, 90px);
+        font-size: clamp(100px, 12vw, 160px);
     }
     .central-bigtext{
     font-size:160px;
@@ -659,7 +649,7 @@ font-size:clamp(70px, 10vw, 140px)
       }
 
     .footer .bigtext {
-        font-size: 60px;
+        font-size: clamp(42px, 14vw, 78px);
     }
      .footer {
         padding: 35px 20px 20px;
@@ -678,4 +668,3 @@ font-size:clamp(70px, 10vw, 140px)
     font-size:71px;
 }
 }
-
