@@ -362,7 +362,7 @@ img {
             display: flex;
             flex-wrap: wrap;
             gap: 36px 28px;
-            padding: 70px;
+            padding: 50px;
             background-color: var(--footer-bg);
         }
 
@@ -536,6 +536,12 @@ font-size:clamp(70px, 10vw, 140px)
 }
 .homenum{
     font-size:65px;
+}
+.explorehidden{
+font-size:80px;
+}
+.contact-large{
+    font-size: 36px;
 }
 }
 

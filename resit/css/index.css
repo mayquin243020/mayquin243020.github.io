@@ -69,7 +69,7 @@
 .locations > .central-bigtext {
     text-align: center;
     margin: 100px 0;
-    font-size: clamp(42px, 12vw, 160px);
+    font-size: clamp(20px, 10vw, 160px);
 }
 
 .gem-list {
@@ -446,7 +446,7 @@
     }
 
     .locations {
-        padding: 80px 45px 0;
+       padding: 0 80px 45px 0;
     }
 
     .location-top {
