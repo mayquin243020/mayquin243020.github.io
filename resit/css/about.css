@@ -182,7 +182,6 @@
 }
 
 .client img {
-    max-width: 70%;
     filter: grayscale(100%) opacity(45%);
 }
 

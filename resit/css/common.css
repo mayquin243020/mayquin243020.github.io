@@ -51,7 +51,7 @@ img {
 /*footer text*/
 .bigtext{
     font-family: var(--font-heading);
-    font-size:190px;
+    font-size: clamp(32px, 14vw, 190px);
     font-weight: 400;
     line-height: 1;
     margin: 70px 0px 0px;
@@ -543,7 +543,7 @@ font-size:80px;
     font-size: 36px;
 }
 .bigtext{
-    font-size: 100px;
+    font-size: clamp(32px, 10vw, 100px);
 }
 }
 
