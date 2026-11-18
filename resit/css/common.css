@@ -210,7 +210,6 @@ img {
     font-size: 14px;
     font-weight: 400;
     line-height: 22.75px;
-    text-decoration: none;
     color: var(--text-dark);
 }
 
@@ -303,6 +302,10 @@ img {
     display: flex;
     align-items: center;
     gap: 30px;
+}
+
+.navigation > a {
+    text-decoration: none;
 }
 
 .social-links {
@@ -542,9 +545,6 @@ font-size:80px;
 .contact-large{
     font-size: 36px;
 }
-.bigtext{
-    font-size: clamp(32px, 10vw, 100px);
-}
 }
 
 
@@ -621,6 +621,9 @@ font-size:80px;
         .elementra {
             overflow-wrap: anywhere;
         }
+        .heading-large{
+            font-size:30px;
+        }
 }
 
 @media (max-width: 500px) {
@@ -651,7 +654,7 @@ font-size:80px;
     font-size: clamp(36px, 11vw, 52px);
     }
 
-.elementra {
-    overflow-wrap: anywhere;
+.heading-large{
+    font-size: 30px;
 }
 }
