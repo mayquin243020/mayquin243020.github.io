@@ -370,7 +370,6 @@ img {
 .footer .bigtext {
     flex: 0 0 100%;
     margin-left: 0;
-    font-size: clamp(42px, 14vw, 190px);
     text-align: center;
 }
         .footer-about {
