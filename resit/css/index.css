@@ -130,8 +130,8 @@
     color: var(--text-dark);
 }
 
-.gem:nth-child(1) .paragraph,
-.gem:nth-child(3) .paragraph {
+.gem:nth-child(1) .p,
+.gem:nth-child(3) .p {
     color: var(--white);
 }
 
