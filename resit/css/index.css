@@ -75,7 +75,6 @@
     display: flex;
     gap: 24px;
     margin: 42px auto 0;
-    max-width: 1440px;
 }
 
 .gem {
@@ -222,7 +221,6 @@
 .adventure-top {
     display: flex;
     gap: 4%;
-    align-items: flex-start;
 }
 
 .adventure-text {

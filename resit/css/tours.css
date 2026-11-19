@@ -32,8 +32,6 @@
 
 .tour-image {
     width: 50%;
-    min-width: 0;
-    overflow: hidden;
 }
 
 .tour-image img {
@@ -69,9 +67,7 @@
 
 .faq-container {
     display: flex;
-    align-items: flex-start;
     gap: 60px;
-    width: 100%;
     max-width: 1200px;
     margin: 0 auto;
 }

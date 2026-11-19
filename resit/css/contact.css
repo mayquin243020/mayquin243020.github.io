@@ -20,9 +20,7 @@
 
 .general-list {
     display: flex;
-    justify-content: space-between;
     column-gap: 45px;
-    row-gap: 45px;
 }
 
 

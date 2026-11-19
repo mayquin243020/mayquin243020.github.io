@@ -60,8 +60,7 @@
 
 .team-layout {
     display: flex;
-    align-items: flex-start;
-    gap: 55px;
+        gap: 55px;
 }
 
 
@@ -101,7 +100,7 @@
 
 .testimonial {
     background-color:var( --background-cream);
-    padding: 80px 4.5% 60px;
+    padding: 80px 68px;
 }
 
 
@@ -112,7 +111,6 @@
 
 .reviews {
     display: flex;
-    justify-content: space-between;
     gap: 30px;
     margin-top: 55px;
 }
@@ -167,18 +165,11 @@
 }
 
 .client-row {
-    display: flex;
-    width: 100%;
-}
+    display: flex;}
 
 .client {
-    width: 100%;
     padding: 40px;
     border: 1px solid #f0f0ed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    box-sizing: border-box;
 }
 
 .client img {
@@ -203,10 +194,8 @@
 
 .explore-images {
     display: flex;
-    flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    gap: clamp(10px, 3vw, 35px);
     margin-top: 55px;
 }
 
@@ -223,9 +212,7 @@
 
 .join-items {
     display: flex;
-    justify-content: center;
     gap: 30px;
-    max-width: 1200px;
     margin: 50px auto 0;
 }
 
