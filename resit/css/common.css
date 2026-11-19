@@ -38,42 +38,23 @@ img {
     max-width: 100%;
 }
 
-.central-bigtext{
-    font-family: var(--font-heading);
-    font-size: clamp(42px, 18vw, 228.15px);
-    font-weight: 400;
-    line-height: 1;
-    margin: 70px 0 0;
-    color: var( --bigelementra);
-    margin-left: 0;
-}
+
 
 /*footer text*/
 .bigtext{
     font-family: var(--font-heading);
     font-size: clamp(32px, 14vw, 190px);
-    font-weight: 400;
     line-height: 1;
     margin: 70px 0px 0px;
-   color:var( --footer-element);
+    color: var(--footer-element);
+    width: 100%;
+    text-align: center;
 }
 
-
-
-.explorehidden{
-     font-family: var(--font-heading);
-    font-size:100px;
-    font-weight: 400;
-    line-height: 1;
-    color: var(--text-dark);
-        text-align: center;
-
-}
 
 .homenum{
     font-family: var(--font-heading);
     font-size: 120px;
-    font-weight: 400;
     line-height: 1.15;
     color:var(--text-dark);
 }
@@ -81,7 +62,6 @@ img {
 .home-explore{
     font-family: var(--font-heading);
     font-size: 106.47px;
-    font-weight: 400;
     line-height: 1;
     margin-bottom: 12px;
     text-align: left;
@@ -92,7 +72,6 @@ img {
 .home-tittle{
     font-family: var(--font-heading);
     font-size: clamp(36px, 10vw, 141px);
-    font-weight: 400;
     line-height: 1;
     white-space: normal;
     overflow-wrap: break-word;
@@ -103,7 +82,6 @@ img {
 .elementra{
     font-family: var(--font-heading);
     font-size: clamp(42px, 14vw, 225.108px);
-    font-weight: 400;
     line-height: 1.3;
     text-align: center;
     color: var(--bigelementra);
@@ -112,7 +90,6 @@ img {
 .number{
     font-family: var(--font-heading);
     font-size: 70px;
-    font-weight: 400;
     line-height: 1.15;
 }
 
@@ -121,7 +98,6 @@ img {
 .heading-large {
     font-family: var(--font-heading);
     font-size: 57px;
-    font-weight: 400;
     line-height: 1.15;
 }
 
@@ -130,7 +106,6 @@ img {
 .contact-large{
     font-family: var(--font-heading);
     font-size: 47px;
-    font-weight: 400;
     line-height: 1.30;
     color:var(--white)
 }
@@ -138,7 +113,6 @@ img {
 .heading-section {
     font-family: var(--font-heading);
     font-size: 28px;
-    font-weight: 400;
     line-height: 1.3;
 }
 
@@ -147,7 +121,6 @@ img {
 .heading-medium {
     font-family: var(--font-heading);
     font-size: 25px;
-    font-weight: 400;
     line-height: 1.3;
 }
 
@@ -155,7 +128,6 @@ img {
 .introduction {
     font-family: var(--font-heading);
     font-size: 23px;
-    font-weight: 400;
     line-height: 1.2;
 }
 
@@ -163,7 +135,6 @@ img {
 .heading-small {
     font-family: var(--font-heading);
     font-size: 20px;
-    font-weight: 400;
     line-height: 1.3;
 }
 
@@ -181,7 +152,6 @@ img {
 .text-body {
     font-family: var(--font-base);
     font-size: 16px;
-    font-weight: 400;
     line-height: 1.7;
     color:var(--footer-text);
 }
@@ -189,7 +159,6 @@ img {
 .link-text{
     font-family: var(--font-heading);
     font-size: 13px;
-    font-weight: 400;
     line-height: 1.7;
     color:var(   --text-dark);
     text-decoration: none;
@@ -200,7 +169,6 @@ img {
 .text-description {
     font-family: var(--font-base);
     font-size: 15px;
-    font-weight: 400;
     line-height: 1.7;
 }
 
@@ -208,15 +176,13 @@ img {
 .text-small {
     font-family: var(--font-heading);
     font-size: 14px;
-    font-weight: 400;
     line-height: 22.75px;
     color: var(--text-dark);
 }
 
-.p {
+.information {
     font-family: var(--font-base);
     font-size: 14px;
-    font-weight: 400;
     line-height: 18px;
     color:var(--text-light);
 }
@@ -225,7 +191,6 @@ img {
 .text-caption {
     font-family: var(--font-base);
     font-size: 13px;
-    font-weight: 400;
     line-height: 20px;
 }
 
@@ -233,7 +198,6 @@ img {
 .text-label {
     font-family: var(--font-base);
     font-size: 12px;
-    font-weight: 500;
     line-height: 18px;
     letter-spacing: 1.5px;
     text-transform: uppercase;
@@ -244,7 +208,6 @@ img {
     display: inline-block;
     font-family:  var(--font-heading);
     font-size: 13px;
-    font-weight: 500;
     line-height: 22.75px;
     padding: 15px 30px;
     text-decoration: none;
@@ -264,7 +227,6 @@ img {
     gap: 8px;
     font-family: var(--font-heading);
     font-size: 13px;
-    font-weight: 400;
     line-height: 22.75px;
     padding: 0 15px;
     text-decoration: none;
@@ -369,12 +331,6 @@ img {
             background-color: var(--footer-bg);
         }
 
-       
-.footer .bigtext {
-    flex: 0 0 100%;
-    margin-left: 0;
-    text-align: center;
-}
         .footer-about {
             flex: 1.5 1 240px;
         }

@@ -65,10 +65,13 @@
     text-align: center;
 }
 
-.locations > .central-bigtext {
+.central-bigtext {
     text-align: center;
     margin: 100px 0;
-    font-size: clamp(20px, 10vw, 160px);
+    font-size: clamp(20px, 10vw, 200px);
+    font-family: var(--font-heading);
+    line-height: 1;
+    color: var(--bigelementra);
 }
 
 .gem-list {
@@ -110,10 +113,6 @@
     border-radius: 46%;
 }
 
-.gem:nth-child(1) img,
-.gem:nth-child(3) img {
-    transform: translateY(-12px);
-}
 
 .gem-info {
     width: 100%;
@@ -125,8 +124,8 @@
     color: var(--text-dark);
 }
 
-.gem:nth-child(1) .p,
-.gem:nth-child(3) .p {
+.gem:nth-child(1) .information,
+.gem:nth-child(3) .information {
     color: var(--white);
 }
 
@@ -158,14 +157,21 @@
     margin-top: 42px;
 }
 
-.location-images img {
-    width: 24%;
+
+.location-images div {
+    width:calc(25% - calc(20px/3));
 }
-.location-images img:nth-child(2),
-.location-images img:nth-child(4) {
-    position: relative;
-    top: 25px;
+
+.explorehidden{
+    font-family: var(--font-heading);
+    font-size:100px;
+    font-weight: 400;
+    line-height: 1;
+    color: var(--text-dark);
+    text-align: center;
+
 }
+
 
 .numbers {
     display: flex;
@@ -552,7 +558,6 @@
     .hero-image img,
     .hero-image img:last-child {
         width: 100%;
-        object-fit: cover;
     }
 
     .gem-list {
@@ -616,10 +621,6 @@
         width: 48%;
         height: 230px;
         object-fit: cover;
-    }
-
-    .location-images img:nth-child(even) {
-        margin-top: 25px;
     }
 
     .numbers {

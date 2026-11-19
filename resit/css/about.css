@@ -192,12 +192,7 @@
     gap: 60px;
 }
 
-.explore-images {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-top: 55px;
-}
+
 
 .explore-images img {
     width: 20%;
@@ -387,6 +382,7 @@
         justify-content: center;
         align-items: center;
         margin-top: 45px;
+        gap: 40px
     }
 
     .join {
